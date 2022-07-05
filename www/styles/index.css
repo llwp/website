@@ -241,3 +241,7 @@ th {
     width: 100%;
   }
 }
+
+.sbui-btn-primary  {
+  @apply bg-primary text-white !important;
+}

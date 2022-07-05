@@ -37,6 +37,7 @@ module.exports = {
         'accent-2': '#EAEAEA',
         'accent-7': '#333',
         success: '#0070f3',
+        primary: '#4ab96d',
         cyan: '#79FFE1',
         brand: {
           100: '#82dab0',
@@ -45,7 +46,7 @@ module.exports = {
           400: '#C5F1DD',
           500: '#9FE7C7',
           600: '#65D9A5',
-          700: '#3ECF8E',
+          700: '#4ab96d',
           800: '#38BC81',
           900: '#10633E',
         },
