@@ -4,9 +4,9 @@ import SectionContainer from "./Layouts/SectionContainer";
 import { HeroBg } from "./UI/HeroBg";
 
 const Hero = () => (
-  <div className="overflow-hidden relative pb-[10%]">
+  <div className="overflow-hidden relative">
     <HeroBg />
-    <SectionContainer className="pb-0 pt-24">
+    <SectionContainer className="hero-content pb-0 pt-24">
       <div className="relative">
         <main className="min-w-full min-h-full">
           <div className="mx-auto">

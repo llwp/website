@@ -221,27 +221,43 @@ th {
   fill: #333741;
 }
 
+@media screen and (max-width: 1266px) {
+  .hero-bg {
+    display: none;
+  }
+}
+
 .hero-bg {
-  display: none;
-}
-
-@media screen and (min-width: 1056px) {
-  .hero-bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: auto;
-    width: 140%;
-  }
-}
-
-@media screen and (min-width: 1173px) {
-  .hero-bg {
-    width: 100%;
-  }
+  margin-top: -80px;
 }
 
 .sbui-btn-primary  {
   @apply bg-primary text-white !important;
+}
+
+@media screen and (min-width: 1266px) {
+  .hero-content {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .hero-bg {
+    margin-top: -180px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .hero-bg {
+    margin-top: -320px;
+  }
+}
+
+@media screen and (min-width: 3000px) {
+  .hero-bg {
+    margin-top: -500px;
+  }
 }
