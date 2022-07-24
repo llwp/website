@@ -40,14 +40,19 @@ Then, with your favorite IDE create a file `index.js` with the following content
 
 ```javascript
 const { VoiceServer } = require("@fonoster/voice");
-const voiceServer = new VoiceServer();
 
-voiceServer.listen(async(req, res) => {
-  console.log(req);
-  await res.answer();
-  await res.play("sound:hello-world");
-  await res.hangup();
-});
+const serverConfig = {
+  pathToFiles: `${process.cwd()}/sounds`,
+};
+
+new VoiceServer(serverConfig).listen(
+  async (req, res) => {
+    console.log(req);
+    await res.answer();
+    await res.play(`sound:${req.selfEndpoint}/sounds/hello-world.sln16`);
+    await res.hangup();
+  }
+);
 ```
 
 Next, install the Voice module with:

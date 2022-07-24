@@ -3,19 +3,21 @@ export default [
     lang: 'js',
     title: 'Voice App',
     description: 'Sign up a new user in an example chat room',
-    code: `const { VoiceServer } = require("@fonoster/voice")
-const voiceServer = new VoiceServer({ base: '/voiceapp' })
+    code: `const { VoiceServer } = require("@fonoster/voice");
+const serverConfig = {
+  pathToFiles: \`${process.cwd()}/sounds\`,
+};
 
-// Start the voice server
-voiceServer.listen(async(req, res) => {
-  console.log(req)
-  // Answer the call
-  await res.answer()
-  // Use the Say verb to stream a sound back to the user
-  res.say("Welcome to your application")
-})
+new VoiceServer(serverConfig).listen(
+  async (req, res) => {
+    console.log(req);
+    await res.answer();
+    await res.play(\`sound:${req.selfEndpoint}/sounds/hello-world.sln16\`);
+    await res.hangup();
+  }
+);
 
-// your app will leave at http://127.0.0.1/voiceapp
+// your app will leave at http://127.0.0.1:3000/
 // and you can easily publish it to the Internet with:
 // ngrok http 3000
   `,
