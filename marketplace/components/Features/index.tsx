@@ -33,7 +33,7 @@ const Features = () => {
   return (
     <SectionContainer className="pb-0">
       <Typography.Title level={2} className="mb-16">
-        Build voice applications for your business, today
+        Build voice applications for your business, today.
       </Typography.Title>
       <dl className="grid grid-cols-1 sm:grid-cols-2  gap-y-4 md:grid-cols-2 lg:grid-cols-4 md:gap-16 lg:gap-x-8 xl:gap-x-24">
         {IconSections}

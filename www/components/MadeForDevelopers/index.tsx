@@ -13,7 +13,7 @@ const MadeForDevelopers = () => {
       <APISection
         autoHeight={true}
         size="large"
-        title={'The SDK and Tooling to help you build fast'}
+        title={'The SDKs and Tooling to help you build your apps faster.'}
         text={[
           <p className="lg:text-lg" key={'madefordeveloper-para-1'}>
             Create a smart voice applications that meets your business needs without the clutter of unneeded features 

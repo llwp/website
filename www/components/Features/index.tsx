@@ -37,7 +37,7 @@ const Features = () => {
         ABOUT
       </Typography.Text>
       <Typography.Title level={2} className="mb-16 max-w-lg">
-        Build voice applications for your business, today
+        Build voice applications for your business, today.
       </Typography.Title>
       <dl className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 md:grid-cols-2 md:gap-16 lg:gap-x-8 xl:gap-x-24">
         {IconSections}
