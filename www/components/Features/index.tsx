@@ -23,7 +23,7 @@ const Features = () => {
         </div>
 
         <div className="mt-3">
-          <Badge dot>{label || 'Released'}</Badge>
+          <Badge dot color={ label?.toLowerCase() === 'experimental' ? 'yellow' : 'green'}>{label || 'Released'}</Badge>
         </div>
 
         {url && <TextLink label={"Learn more"} url={url} />}

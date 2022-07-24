@@ -2,17 +2,17 @@ export default [
   {
     lang: 'js',
     title: 'Voice App',
-    description: 'Sign up a new user in an example chat room',
+    description: 'Play a hello world sound',
     code: `const { VoiceServer } = require("@fonoster/voice");
 const serverConfig = {
-  pathToFiles: \`${process.cwd()}/sounds\`,
+  pathToFiles: \`\${process.cwd()}/sounds\`,
 };
 
 new VoiceServer(serverConfig).listen(
   async (req, res) => {
     console.log(req);
     await res.answer();
-    await res.play(\`sound:${req.selfEndpoint}/sounds/hello-world.sln16\`);
+    await res.play(\`sound:\${req.selfEndpoint}/sounds/hello-world.sln16\`);
     await res.hangup();
   }
 );
@@ -25,7 +25,7 @@ new VoiceServer(serverConfig).listen(
   {
     lang: 'js',
     title: 'CallManager',
-    description: 'Receive realtime messages in an example chat room',
+    description: 'Call a number and connect with a voice application',
     code: `const Fonoster = require("@fonoster/sdk")
 const callManager = new Fonoster.CallManager()
 
