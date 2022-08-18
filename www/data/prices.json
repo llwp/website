@@ -1,0 +1,48 @@
+[
+    {
+        "ref": "free",
+        "title": "Free",
+        "price": "$0",
+        "description": "Rate-limited plan for quickly and easily learning and standing up a prototype app.",
+        "features": [
+            "1 Project",
+            "1 Domain",
+            "4k Calls",
+            "1GB Storage",
+            "1-day log retention",
+            "Community support"
+        ],
+        "url": "https://console.fonoster.io?plan=free"
+    },
+    {
+        "ref": "pro",
+        "title": "Pro",
+        "price": "$25",
+        "description": "Perfect for small/medium sized businesses with large-scale applications going into production.",
+        "features": [
+            "10GB Storage",
+            "Unlimited Projects",
+            "Unlimited Domains",
+            "120k Calls",
+            "30-day log retention",
+            "Email support"
+        ],
+        "isMonthly": true,
+        "url": "https://console.fonoster.io?plan=pro"
+    },
+    {
+        "ref": "advance",
+        "title": "Advance",
+        "price": "Contact Us",
+        "description": "The highest level of security, regulatory compliance, performance, and scalability.",
+        "features": [
+            "Technical support with SLAs",
+            "Volume commitment pricing",
+            "Technical onboarding",
+            "Single Sign-On (Coming Soon)",
+            "Customer Success Manager"
+        ],
+        "url": "mailto:fonosterteam@fonoster.com",
+        "footerMessage": "Contact us (email to: support@fonoster.com)"
+    }
+]

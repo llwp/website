@@ -1,0 +1,26 @@
+[
+    [
+        {
+            "question": "Is the Self-hosted version free?",
+            "answer": "Yes, you can self-host it and use your Community Edition for free, forever."
+        },
+        {
+            "question": "How long will the free plan remain free?",
+            "answer": "Forever."
+        },
+        {
+            "question": "Do you offer special programs for government and public sector customers?",
+            "answer": "Yes, we do. Please contact us to learn more."
+        }
+    ],
+    [
+        {
+            "question": "Do you offer special programs for non-profit organizations, open source projects, or educational institutions?",
+            "answer": "Yes, we offer special rates to organizations that do good things worldwide. If you'd like to apply for a concession, please contact us, and we'll be glad to get to know your work."
+        },
+        {
+            "question": "How do I report issues and get support?",
+            "answer": "Users in the Free plan can raise issues in the issue tracker or ask questions at GitHub discussions. Check our support page for additional support options."
+        }
+    ]
+]
