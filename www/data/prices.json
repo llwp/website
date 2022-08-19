@@ -7,7 +7,7 @@
         "features": [
             "1 Project",
             "1 Domain",
-            "4k Calls",
+            "4k/mo Calls",
             "1GB Storage",
             "1-day log retention",
             "Community support"
@@ -18,12 +18,12 @@
         "ref": "pro",
         "title": "Pro",
         "price": "$25",
-        "description": "Perfect for small/medium sized businesses with large-scale applications going into production.",
+        "description": "Perfect for small and medium businesses with applications going into production.",
         "features": [
             "10GB Storage",
             "Unlimited Projects",
             "Unlimited Domains",
-            "120k Calls",
+            "120k/mo Calls",
             "30-day log retention",
             "Email support"
         ],
