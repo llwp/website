@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import FooterLinks from "data/Footer.json";
 import SectionContainer from "../Layouts/SectionContainer";
 import DarkModeToggle from "../DarkModeToggle";
+import Link from "next/link";
 
 type Props = {
   darkMode: boolean;
@@ -79,21 +80,22 @@ const Footer = (props: Props) => {
                     <ul className="mt-4 space-y-2">
                       {segment.links.map((link: any, idx: number) => (
                         <li key={`${segment.title}_link_${idx}`}>
-                          <a
-                            href={link.url}
-                            className={`text-sm ${
-                              link.url
-                                ? "text-gray-500 dark:text-dark-100"
-                                : "text-gray-400 dark:text-dark-200"
-                            } hover:text-gray-900 dark:hover:text-gray-300`}
-                          >
-                            {link.text}
-                            {!link.url && (
-                              <span className="block text-sm text-gray-300 dark:text-dark-300">
-                                Coming soon
-                              </span>
-                            )}
-                          </a>
+                          <Link href={link.url}>
+                            <a
+                              className={`text-sm ${
+                                link.url
+                                  ? "text-gray-500 dark:text-dark-100"
+                                  : "text-gray-400 dark:text-dark-200"
+                              } hover:text-gray-900 dark:hover:text-gray-300`}
+                            >
+                              {link.text}
+                              {!link.url && (
+                                <span className="block text-sm text-gray-300 dark:text-dark-300">
+                                  Coming soon
+                                </span>
+                              )}
+                            </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>

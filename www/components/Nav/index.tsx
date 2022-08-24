@@ -332,7 +332,7 @@ const Nav = (props: Props) => {
                     GitHub
                   </a>
                   <a
-                    href="https://learn.fonoster.com/docs/blog"
+                    href="https://learn.fonoster.com/blog"
                     target="_blank"
                     className="block pl-3 pr-4 py-2 text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 dark:hover:bg-dark-600 hover:border-gray-300 dark:text-white"
                   >
