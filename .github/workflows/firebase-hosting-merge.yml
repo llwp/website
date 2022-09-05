@@ -15,7 +15,16 @@ jobs:
         with:
           persist-credentials: false
           fetch-depth: 0
-      - run: npm run build
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+
+      - name: Build applications
+        run: npm run build
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
