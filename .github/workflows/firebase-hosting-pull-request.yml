@@ -7,7 +7,11 @@ jobs:
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: 🏷️ Check out Git repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+          fetch-depth: 0
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

@@ -3,7 +3,7 @@
 set -e
 
 # Build sources for landing application
-cd wwww
+cd ./wwww
 npm install
 npm run build
 npm run export
