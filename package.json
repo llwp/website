@@ -1,10 +1,12 @@
 {
   "name": "fonoster-website",
   "version": "0.0.1",
-  "description": "Fonoster main website",
   "private": true,
+  "description": "Fonoster main website",
+  "license": "MIT",
   "scripts": {
+    "build": "bash build.sh",
+    "deploy": "firebase deploy --only hosting",
     "emulate": "firebase emulators:start"
-  },
-  "license": "MIT"
+  }
 }
