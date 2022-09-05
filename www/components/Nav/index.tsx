@@ -244,7 +244,7 @@ const Nav = (props: Props) => {
                   <Button type="text">Sign in</Button>
                 </a>
                 <a href="https://form.typeform.com/to/CvQqk9">
-                  <Button>Early Access</Button>
+                  <Button>Get Started</Button>
                 </a>
               </div>
             </div>
@@ -296,7 +296,7 @@ const Nav = (props: Props) => {
                     href="https://form.typeform.com/to/CvQqk9"
                     className="block pl-3 pr-4 text-base font-medium text-gray-600 dark:text-white"
                   >
-                    Early Access
+                    Get Started
                   </a>
                 </div>
                 <div className="pt-2 pb-4 space-y-1">

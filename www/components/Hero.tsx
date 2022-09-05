@@ -33,7 +33,7 @@ const Hero = () => (
                   >
                     <a>
                       <Button className="mt-10 py-3" size="medium">
-                        Early Access
+                        Get Started
                       </Button>
                     </a>
                   </Link>

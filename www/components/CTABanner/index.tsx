@@ -22,7 +22,7 @@ const CTABanner = (props: any) => {
       </div>
       <div className="col-span-12 mt-4">
         <a href="https://form.typeform.com/to/CvQqk9">
-          <Button size="medium">Early Access</Button>
+          <Button size="medium">Get Started</Button>
         </a>
       </div>
     </div>
