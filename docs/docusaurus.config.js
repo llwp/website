@@ -18,7 +18,7 @@ const config = {
 
   presets: [
     [
-      '@docusaurus/preset-classic',
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -50,19 +50,6 @@ const config = {
         // Should we use the prefers-color-scheme media-query,
         // using user system preferences, instead of the hardcoded defaultMode
         respectPrefersColorScheme: false,
-  
-        // Dark/light switch icon options
-        switchConfig: {
-          // Icon for the switch while in dark mode
-          darkIcon: '  ',
-          darkIconStyle: {
-            marginTop: '1px',
-          },
-          lightIcon: '  ',
-          lightIconStyle: {
-            marginTop: '1px',
-          },
-        },
       },
       navbar: {
         logo: {
