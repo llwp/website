@@ -16,5 +16,5 @@ npm run export
 
 # Build sources for docs application
 cd ../docs
-npm install --force
-npm run build
+yarn install
+yarn build
