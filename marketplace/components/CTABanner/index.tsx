@@ -16,8 +16,8 @@ const CTABanner = (props: any) => {
         </Typography.Title>
       </div>
       <div className="col-span-12 mt-4">
-        <a href="https://form.typeform.com/to/CvQqk9">
-          <Button size="medium">Early Access</Button>
+        <a href="https://console.fonoster.io">
+          <Button size="medium">Get Started</Button>
         </a>
       </div>
     </div>
