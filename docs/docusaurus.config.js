@@ -128,8 +128,8 @@ const config = {
                 href: 'https://github.com/fonoster/fonoster/discussions',
               },
               {
-                label: 'Slack Community',
-                href: 'https://form.typeform.com/to/CvQqk9',
+                label: 'Discord Community',
+                href: 'https://discord.gg/mpWSRUhG7e',
               },
             ],
           },

@@ -12,6 +12,6 @@ We offer email-based support for business users. You can email us at fonostertea
 
 If you need SLAs, guaranteed response times, or other enterprise-level services, please, contact us at this email address.
 
-## Slack Support
+## Discord Support
 
-If you are building with Fonoster and you would like to set up a shared Slack channel (via [Slack](https://form.typeform.com/to/CvQqk9)), please reach out to us at fonosterteam@fonoster.com.
+If you are building with Fonoster and you would like to set up a shared Discord server (via [Discord](https://discord.gg/mpWSRUhG7e)), please reach out to us at fonosterteam@fonoster.com.

@@ -17,6 +17,6 @@ Fonoster helps developers to create, test and deploy real-time communication sol
 
 Fonoster has a community of Open Source contributors and users.
 
-Find out more on the [community page](/docs/community) and join the Slack workspace.
+Find out more on the [community page](/docs/community) and join the Discord workspace.
 
-If you want to join the Slack channel to chat with contributors and get help, please complete the [request form](https://form.typeform.com/to/CvQqk9)
+If you want to join the Discord server to chat with contributors and get help, please complete the [request form](https://discord.gg/mpWSRUhG7e)

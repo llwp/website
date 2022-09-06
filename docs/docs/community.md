@@ -2,7 +2,7 @@
 
 Fonoster is developed in the open. Here are some of the channels we use to communicate and contribute:
 
-[Slack](https://form.typeform.com/to/CvQqk9)
+[Discord](https://discord.gg/mpWSRUhG7e)
 
 **Github discussions:**
 
@@ -11,7 +11,7 @@ Fonoster is developed in the open. Here are some of the channels we use to commu
 
 **Twitter:** [@fonoster](https://twitter.com/fonoster)
 
-**Issue tracker:** Use the GitHub issue tracker for the various [Fonoster repositories](https://github.com/fonoster/) to file bugs and features requests. For support, please send your questions to Github discussions or Slack channel rather than filling a GitHub issue.
+**Issue tracker:** Use the GitHub issue tracker for the various [Fonoster repositories](https://github.com/fonoster/) to file bugs and features requests. For support, please send your questions to Github discussions or Discord rather than filling a GitHub issue.
 
 >Please do not ask individual project members for support. Use the channels above instead, where the whole community can help you and benefit from the solutions provided. If community support is insufficient for your situation, please refer to the [Commercial Support](/docs/support) section below.
 
@@ -21,7 +21,7 @@ We welcome community contributions! Please see the [CONTRIBUTING.md](https://git
 
 ## Developer Meetings
 
-We strive to be as open and public as possible. Technical discussions happen on Slack, and we also host weekly "Office Hours" for meetings with the maintainers and ask questions.
+We strive to be as open and public as possible. Technical discussions happen on Discord, and we also host weekly "Office Hours" for meetings with the maintainers and ask questions.
 
 ## Code of Conduct
 
