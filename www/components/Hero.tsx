@@ -28,8 +28,8 @@ const Hero = () => (
                 </Typography.Text>
                 <Space>
                   <Link
-                    href="https://form.typeform.com/to/CvQqk9"
-                    as="https://form.typeform.com/to/CvQqk9"
+                    href="https://console.fonoster.io"
+                    as="https://console.fonoster.io"
                   >
                     <a>
                       <Button className="mt-10 py-3" size="medium">

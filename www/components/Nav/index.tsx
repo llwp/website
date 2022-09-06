@@ -243,7 +243,7 @@ const Nav = (props: Props) => {
                 <a href="https://console.fonoster.io" target="_blank">
                   <Button type="text">Sign in</Button>
                 </a>
-                <a href="https://form.typeform.com/to/CvQqk9">
+                <a href="https://console.fonoster.io">
                   <Button>Get Started</Button>
                 </a>
               </div>
@@ -293,7 +293,7 @@ const Nav = (props: Props) => {
               <div className="mt-6 mb-12">
                 <div className="pt-2 pb-4 space-y-1">
                   <a
-                    href="https://form.typeform.com/to/CvQqk9"
+                    href="https://console.fonoster.io"
                     className="block pl-3 pr-4 text-base font-medium text-gray-600 dark:text-white"
                   >
                     Get Started
