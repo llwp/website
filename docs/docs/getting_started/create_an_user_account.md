@@ -3,7 +3,7 @@
 Creating an user account will give you access to: 
 
 - Create and manage your Projects
-- Set your Providers, Agents and Numbers
+- Set your Trunks, Agents and Numbers
 - Manage your user settings
 
 > If you already have a Fonoster account, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
@@ -12,11 +12,11 @@ You will need to [Sign In](https://console.fonoster.io) with GitHub to create a 
 
 ![FonosterSignIn](https://user-images.githubusercontent.com/80093500/189687721-bc1b1631-1b21-45ad-8a4c-ee78ba68ddab.jpg)
 
-This will give you access to our main console where you can start adding Numbers, Providers, SIP Agents, Aomains and so much more! 
+This will give you access to our main console where you can start adding Numbers, Trunks, SIP Agents, Domains and so much more! 
 
 But before we can get started we need to **create a New Project** that will automatically generate us our `ACCESS_KEY_ID` and our `ACCESS_KEY_SECRET` needed to make calls from Node.js.
 
-**Create a new project**
+**Create a new Project**
 
 ![FonosterCreateProject](https://user-images.githubusercontent.com/80093500/189688035-4a4bc9a1-b6ef-4511-adad-a43aaed3f658.jpg)
 
