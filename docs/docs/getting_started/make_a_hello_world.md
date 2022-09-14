@@ -31,10 +31,10 @@ Type into your terminal `cd nodejs-voiceapp` and install all the dependencies wi
 
 > ![PackagesInstalled](https://user-images.githubusercontent.com/80093500/189741002-423c8c33-8ad0-41ea-8d1b-a11e7410421f.jpg)
 
-Now you only need a couple more packages to install so run `npm i ngrok`  
-> ![ngrok](https://user-images.githubusercontent.com/80093500/189742008-3506d32e-19e7-4f74-8dbb-2b75835127ee.jpg)
+Now you only need a couple more packages to install so run ` npm install -g ngrok`  
+> ![ngrokinstall](https://user-images.githubusercontent.com/80093500/190241907-d8a05a09-a500-4d52-b810-b76263557b97.jpg)
 
-And `npm i --save-dev cross-env`
+And `npm install --save-dev cross-env`
 > ![env](https://user-images.githubusercontent.com/80093500/189742295-0c87d7a4-c546-4d16-9b9c-e40b14b036d8.jpg)
 
 Now you **are ready to start your server!!!** 
