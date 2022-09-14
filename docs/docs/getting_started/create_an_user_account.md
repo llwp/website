@@ -41,6 +41,6 @@ And this is how you account credentials look like. They will have the `US` prefi
 ![UserKey](https://user-images.githubusercontent.com/80093500/189698170-598669eb-5d4c-4390-9cc8-2cf7904e7a16.png)
 
 
-Now **you are all set with the basics of your Fonoster account for the next step** and start making calls from Node.js or just play around with our Dashboard making your first **Hello World.**!
+Now **you are all set with the basics of your Fonoster account for the next step** and start making calls from Node.js or just play around with our Dashboard making your first **Hello World**!
 
 
