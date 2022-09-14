@@ -1,16 +1,46 @@
 # Create an User Account
 
+Creating an user account will give you access to: 
+
+- Create and manage your Projects
+- Set your Trunks, Agents and Numbers
+- Manage your user settings
+
 > If you already have a Fonoster account, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
 
-Before you can make a call from Node.js, you will need an `ACCESS_KEY_ID` and an `ACCESS_KEY_SECRET`. Notice that the credentials for your User account are different from your Project's credentials, and it will have the `US` prefix (i.e: `US618572e3ec11d10600000001`)
+You will need to [Sign In](https://console.fonoster.io) with GitHub to create a Fonoster account
 
-With your User account, you will be able to:
+![FonosterSignIn](https://user-images.githubusercontent.com/80093500/189687721-bc1b1631-1b21-45ad-8a4c-ee78ba68ddab.jpg)
 
-- Manage User settings
-- Create and manage Projects
+This will give you access to our main console where you can start adding Numbers, Trunks, SIP Agents, Domains and so much more! 
 
-To obtain your credentials, you'll need to [sign up](https://console.fonoster.io) for a Fonoster account or [login](https://console.fonoster.io) to an account you already have.
+But before we can get started we need to **create a New Project** that will automatically generate us our `ACCESS_KEY_ID` and our `ACCESS_KEY_SECRET` needed to make calls from Node.js.
 
-<video width="100%" playsInline="" controls="muted">
- <source src="/videos/create_an_user_account.mov" type="video/mp4" playsInline="" />
-</video>
+**Create a new Project**
+
+![FonosterCreateProject](https://user-images.githubusercontent.com/80093500/189688035-4a4bc9a1-b6ef-4511-adad-a43aaed3f658.jpg)
+
+And give it a friendly name, we will call it Demo 
+
+![FonosterCreateNewProject](https://user-images.githubusercontent.com/80093500/189689096-460528b4-79b6-437a-b2d2-59589c590f56.jpg)
+
+After creating your Project, select it by clicking on it. That will take you to its overview and that is where you get your credentials.
+
+![ProjectScreen](https://user-images.githubusercontent.com/80093500/190011281-8b217daa-cd5c-43e1-9e59-5e0e4f0bc36a.png)
+
+Now you have access to our **Dashboard** where you can see your new credentials `ACCESS_KEY_ID` and your `ACCESS_KEY_SECRET`, and many other features on your left side of the screen
+
+![Dashboard](https://user-images.githubusercontent.com/80093500/189691569-08a150ca-0ca1-449b-88ad-d74b96f0fcba.jpg)
+
+**Your Account Credentials** are different from those in your Project and you can find them by going into your account
+
+![AccountUser](https://user-images.githubusercontent.com/80093500/189696920-1dfef7c4-6bba-4479-8b91-c600dc04debd.png)
+
+And this is how you account credentials look like. They will have the `US` prefix (i.e: `US618572e3ec11d10600000001`) 
+
+![UserKey](https://user-images.githubusercontent.com/80093500/189698170-598669eb-5d4c-4390-9cc8-2cf7904e7a16.png)
+
+
+Now **you are all set with the basics of your Fonoster account for the next step** and start making calls from Node.js or just play around with our Dashboard making your first **Hello World.**!
+
+
