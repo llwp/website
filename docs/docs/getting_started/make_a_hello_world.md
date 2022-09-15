@@ -13,9 +13,7 @@ You will need to [Log In](https://console.fonoster.io) to your Fonoster account 
 
 Check the versions by typing `--version` 
 
-> ![checkedVers](https://user-images.githubusercontent.com/80093500/190495081-286d4251-80ca-4b7c-87a9-9e6b5398243f.png)
-
-
+>![versionscheck](https://user-images.githubusercontent.com/80093500/190502099-94115916-11cb-4e47-978f-f79fe724fc1b.png)
 
 ### Setting up our Node.js server
 
@@ -25,25 +23,25 @@ You need to clone this template with [everything you need to create a voice appl
 
 Run this command on your terminal `git clone https://github.com/fonoster/nodejs-voiceapp.git` and hit enter.
 
-> ![cloneRepo](https://user-images.githubusercontent.com/80093500/190495235-62e40d41-4b8d-47b0-836d-e091bb7ae1b1.png)
+>![gitClone](https://user-images.githubusercontent.com/80093500/190502211-9b6ce441-c946-44e2-aed9-d9938a6bb619.png)
 
 Go ahead and cd over the directory it made for you named `nodejs-voiceapp`. 
 
 Type into your terminal `cd nodejs-voiceapp` and install all the dependencies with: `npm i` or `npm install`
 
-> ![dependencies](https://user-images.githubusercontent.com/80093500/190495646-fe0df012-c982-4249-a2a4-46313890d63a.png)
+>![npmi](https://user-images.githubusercontent.com/80093500/190502362-e0f55e00-35bf-401c-8b12-769ba3ac56c2.png)
 
 Now you only need a couple more packages to install so run ` npm install -g ngrok`  
-> ![ngrok](https://user-images.githubusercontent.com/80093500/190495815-007d9525-22b1-42bf-a9dd-33eeae96cfd3.png)
+>![ngrok](https://user-images.githubusercontent.com/80093500/190502521-7378a255-3250-463b-86da-b77dfc68ca50.png)
 
 And `npm install --save-dev cross-env`
-> ![cross-env](https://user-images.githubusercontent.com/80093500/190496001-8cf892dd-10dd-4481-b6c4-cd6b77152c37.png)
+>![cross-env](https://user-images.githubusercontent.com/80093500/190502641-b932ed46-9317-41b4-88cf-e476bb43ec33.png)
 
 Now you **are ready to start your server!!!** 
 
 Type `npm start` into the terminal and hit enter.
 
->![npmstart](https://user-images.githubusercontent.com/80093500/190496428-bcd43c39-a529-41ed-b4c7-ed4cf6553e90.png)
+>![npmstart](https://user-images.githubusercontent.com/80093500/190502741-8300e694-f16f-4226-9ac6-385e093e5d86.png)
 
 A **successful message** will show you **your server is up and running on port 3000**.
 
@@ -53,11 +51,12 @@ Open a new terminal window **do not close the one you have with the server runni
 
 To connect our server to Fonoster we need to first **make the server public**, to do this you need to type `ngrok http 3000` and this will make ngrok listen to the port the server is on, port 3000.
 
->![ngrokk](https://user-images.githubusercontent.com/80093500/190496731-7d980f2a-46df-4a47-ac44-964097015eb4.png)
+>![ngrokk](https://user-images.githubusercontent.com/80093500/190503104-f25b2282-06bb-4255-81dc-d88a1164c0e4.png)
 
 A **successfull connection will** show you the new HTTP URL where our server is up and running: 
 
-![ngroksuccess](https://user-images.githubusercontent.com/80093500/190497557-51b021ee-c35f-47b4-ade0-9d103b0466f0.png)
+>![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
+>Highlighted yellow because you will need to use this link later on the tutorial.
 
 ### Create a New Project using your Fonoster account
 
@@ -101,7 +100,7 @@ First, select the PLACEHOLDER we created as our Provider in the previous step.
 
 For **Number** you can use any number, **this is a placeholder** but for **Webhook URL** you need to open back your **ngrok terminal** and copy the link provided.
 
->![WebhookURL](https://user-images.githubusercontent.com/80093500/190498471-3478b756-3c84-4f2d-a80e-ff378f31220f.jpg)
+>![WebhookURL](https://user-images.githubusercontent.com/80093500/190503466-4156a58f-ea4e-4cbd-a066-cdc181692b53.jpg)
 
 Go ahead and **Create Number**.
 
