@@ -23,6 +23,7 @@
       items: [
         'getting_started/overview',
         'getting_started/create_an_user_account',
+        'getting_started/make_a_hello_world',
         'getting_started/install_and_setup_the_cli',
         'getting_started/create_a_project',
         'getting_started/create_a_voice_application',
