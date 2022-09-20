@@ -12,8 +12,12 @@ You will need to [Log In](https://console.fonoster.io) to your Fonoster account 
 - Git
 
 Check the versions by typing `--version` 
-
->![versionscheck](https://user-images.githubusercontent.com/80093500/190502099-94115916-11cb-4e47-978f-f79fe724fc1b.png)
+```none
+git --version
+```
+```none
+node --version
+```
 
 ### Setting up our Node.js server
 
@@ -21,28 +25,34 @@ You need to clone this template with [everything you need to create a voice appl
 
 - You do not need a dedicated repository to clone it.
 
-Run this command on your terminal `git clone https://github.com/fonoster/nodejs-voiceapp.git` and hit enter.
+Run this command on your terminal 
 
->![gitClone](https://user-images.githubusercontent.com/80093500/190502211-9b6ce441-c946-44e2-aed9-d9938a6bb619.png)
+```none
+git clone https://github.com/fonoster/nodejs-voiceapp.git
+````
 
 Go ahead and cd over the directory it made for you named `nodejs-voiceapp`. 
 
 Type into your terminal `cd nodejs-voiceapp` and install all the dependencies with: `npm i` or `npm install`
-
->![npmi](https://user-images.githubusercontent.com/80093500/190502362-e0f55e00-35bf-401c-8b12-769ba3ac56c2.png)
-
+```none
+npm install 
+````
 Now you only need a couple more packages to install so run ` npm install -g ngrok`  
->![ngrok](https://user-images.githubusercontent.com/80093500/190502521-7378a255-3250-463b-86da-b77dfc68ca50.png)
-
+```none
+npm install -g ngrok
+````
 And `npm install --save-dev cross-env`
->![cross-env](https://user-images.githubusercontent.com/80093500/190502641-b932ed46-9317-41b4-88cf-e476bb43ec33.png)
 
+```none
+npm install --save-dev cross-env
+````
 Now you **are ready to start your server!!!** 
 
 Type `npm start` into the terminal and hit enter.
 
->![npmstart](https://user-images.githubusercontent.com/80093500/190502741-8300e694-f16f-4226-9ac6-385e093e5d86.png)
-
+```none
+npm start
+````
 A **successful message** will show you **your server is up and running on port 3000**.
 
 ### Connecting our server to Fonoster
@@ -51,8 +61,9 @@ Open a new terminal window **do not close the one you have with the server runni
 
 To connect our server to Fonoster we need to first **make the server public**, to do this you need to type `ngrok http 3000` and this will make ngrok listen to the port the server is on, port 3000.
 
->![ngrokk](https://user-images.githubusercontent.com/80093500/190503104-f25b2282-06bb-4255-81dc-d88a1164c0e4.png)
-
+```none
+ngrok http 3000
+````
 A **successfull connection will** show you the new HTTP URL where our server is up and running: 
 
 >![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
