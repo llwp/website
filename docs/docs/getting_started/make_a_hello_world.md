@@ -4,7 +4,7 @@ You will need to [Log In](https://console.fonoster.io) to your Fonoster account 
 
 > If you don't have one yet you will need to [Sign up](https://console.fonoster.io) with GitHub to create a Fonoster account.
 
-**More of a visual learner?** <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> Watch the YouTube Tutorial. </a> 
+**More of a visual learner?** <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> Watch the YouTube tutorial. </a> 
 
 ## What you will need:
 - Fonoster Account
