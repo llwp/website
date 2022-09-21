@@ -19,7 +19,7 @@ But before we can get started we need to **create a New Project** that will auto
 <ul>
   <li>Sign in into your Fonoster account and create a New Project</li>
   <li>Give it a friendly name</li>
-  <li>Select your New Project by clicking on it. This will take you to its overview and to your credentials.
+  <li>Select your New Project by clicking on it. This will take you to its overview and to your credentials.</li>
     <ul>
       <li>Now you have access to your <strong>Dashboard</strong> where you can see your new credentials `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`, and many other features on your left side of the screen </li>
     </ul>
