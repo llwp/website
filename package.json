@@ -5,8 +5,7 @@
   "description": "Fonoster main website",
   "license": "MIT",
   "scripts": {
-    "build": "bash build.sh",
-    "deploy": "npm run build && firebase deploy --only hosting",
+    "deploy": "firebase deploy --only hosting",
     "emulate": "firebase emulators:start"
   }
 }

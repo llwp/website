@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'fonoster', // Usually your GitHub org/user name.
-  projectName: 'fonoster', // Usually your repo name.
+  projectName: 'website', // Usually your repo name.
 
   presets: [
     [

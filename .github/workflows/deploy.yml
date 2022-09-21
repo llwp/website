@@ -1,4 +1,4 @@
-name: 🚀 CD - Deployment
+name: 🚀 CD - Deployment to Production
 
 on:
   workflow_dispatch:
