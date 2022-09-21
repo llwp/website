@@ -14,7 +14,7 @@ To create a new Project with the console follow the next few steps:
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/create_a_project_1.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/create_a_project_1.mov" type="video/mp4" playsInline="" />
 </video>
 
 To start working with you new Project, you have to select it as default. To set your new Project as default, follow the next steps:
@@ -26,7 +26,7 @@ To start working with you new Project, you have to select it as default. To set 
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/create_a_project_2.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/create_a_project_2.mov" type="video/mp4" playsInline="" />
 </video>
 
 You are all set. You can now begin adding your Providers, Numbers, etc.

@@ -24,7 +24,7 @@ Once you have your trunk information, follow the next few steps:
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/configure_a_number_1.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/configure_a_number_1.mov" type="video/mp4" playsInline="" />
 </video>
 
 ## Adding your Number
@@ -40,7 +40,7 @@ Adding a new Number is just as easy:
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/configure_a_number_2.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/configure_a_number_2.mov" type="video/mp4" playsInline="" />
 </video>
 
 You are all set. Next we will test the application.
