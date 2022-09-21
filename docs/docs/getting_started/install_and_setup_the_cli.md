@@ -13,7 +13,7 @@ The command-line tool is available via NPM. Use the following steps to install t
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/install_and_setup_the_cli_1.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/install_and_setup_the_cli_1.mov" type="video/mp4" playsInline="" />
 </video>
 
 ## Commands and subcommands
@@ -38,7 +38,7 @@ You can point the CLI to your own Fonoster instance, or use our [as a service](h
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="../../videos/install_and_setup_the_cli_2.mov" type="video/mp4" playsInline="" />
+ <source src="/videos/install_and_setup_the_cli_2.mov" type="video/mp4" playsInline="" />
 </video>
 
 
