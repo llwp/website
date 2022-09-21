@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[6846],{4948:e=>{e.exports=JSON.parse('[{"label":"fonoster","permalink":"/website/blog/tags/fonoster","count":1},{"label":"voice","permalink":"/website/blog/tags/voice","count":1}]')}}]);
