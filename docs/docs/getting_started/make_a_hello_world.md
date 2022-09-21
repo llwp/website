@@ -41,6 +41,12 @@ Now you only need a couple more packages to install so run ` npm install -g ngro
 ```none
 npm install -g ngrok
 ````
+
+For Mac
+```none
+brew install ngrok/ngrok/ngrok
+````
+
 And `npm install --save-dev cross-env`
 
 ```none
@@ -64,6 +70,7 @@ To connect our server to Fonoster we need to first **make the server public**, t
 ```none
 ngrok http 3000
 ````
+
 A **successfull connection will** show you the new HTTP URL where our server is up and running: 
 
 >![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
@@ -71,59 +78,45 @@ A **successfull connection will** show you the new HTTP URL where our server is 
 
 ### Create a New Project using your Fonoster account
 
-Without closing any of your open terminals, make your way over to your Fonoster account and create a new project to connect it to your newly created server. 
+Without closing any of your open terminals, make your way over to your Fonoster account and create a new project to connect it to your newly created server. You can name it however you want.
 
->![FonosterCreateProject](https://user-images.githubusercontent.com/80093500/189745109-f2c85777-442d-43ee-910f-24e7e02d3f9b.jpg)
-
-You can name it however you want. 
-
->![newprojectdemo](https://user-images.githubusercontent.com/80093500/189745961-ce31a0ca-f94e-4564-948c-bf9e898544b3.jpg)
+>![createproject3](https://user-images.githubusercontent.com/80093500/191590647-cacce8cd-a14f-4c9b-b205-14f44b3efea1.gif)
 
 Now, select the project you just created so we can have access to the **Fonoster Dashboard.**
 
->![ProjectScreen](https://user-images.githubusercontent.com/80093500/189751537-8a100af5-2412-4b9b-b755-650a41e39116.png)
+>![Demo](https://user-images.githubusercontent.com/80093500/191602117-c3b1e621-d78e-49b2-9160-f0c0eee24477.gif)
 
 #### Creating a New Trunk or Provider
 
 Go to the **SIP NETWORK** tab and create a **New Trunk**
+<ul>
+  <li> You <strong> don't need to have a Provider at this point </strong>, you can use placeholders for every input. </li>
+  <li> <strong> Set Providers Hostname or IPv4 to localhost </strong> and you are ready to click on <strong>Add Provider</strong> </li>
+  </ul>
 
->![NewTrunk](https://user-images.githubusercontent.com/80093500/189752692-7884833a-73d1-446f-922a-41863a8d4c13.jpg)
+>![Trunk(1)](https://user-images.githubusercontent.com/80093500/191605028-7eed06a7-4edd-43c6-b167-dfbee99d14cf.gif)
 
-You **don't need to have a Provider at this point**, you can use placeholders for every input. 
-
->![Placeholder1](https://user-images.githubusercontent.com/80093500/189753362-ee1b608a-42ee-4a9d-977d-336b7055c124.jpg)
-
-**Set Providers Hostname or IPv4 to localhost** and you are ready to click on **Add Provider**
-
->![Placeholder2](https://user-images.githubusercontent.com/80093500/189753477-ffebe23d-15aa-4860-a2ee-8d28a49a8842.jpg)
 
 #### Creating a New Number
 
 The **last step** is to create a new number. Head back to the **SIP NETWORK** tab, select **Number** and **New Number**
+<ul>
+  <li> <strong> You do not need a number, you can also create random ones that will serve as placeholders </strong> </li>
+  <li> First, select the PLACEHOLDER we created as our Provider in the previous step. </li>
+  <li> For <strong> Number </strong> you can use any number, <strong> this is a placeholder </strong> but for <strong> Webhook URL </strong> you need to open back your <strong> ngrok terminal </strong> and copy the link provided. </li>
+  </ul>
 
->![CreateNumber1](https://user-images.githubusercontent.com/80093500/189754121-a00592d7-7ebe-4df7-86ce-5a2747b39b29.jpg)
-
-**You do not need a number, you can also create random ones that will serve as placeholders**.
-
-First, select the PLACEHOLDER we created as our Provider in the previous step. 
-
->![CreateNumberPlaceholder1](https://user-images.githubusercontent.com/80093500/189754656-5e05a9f3-3434-4c74-9a1f-731ae089117a.jpg)
-
-For **Number** you can use any number, **this is a placeholder** but for **Webhook URL** you need to open back your **ngrok terminal** and copy the link provided.
-
->![WebhookURL](https://user-images.githubusercontent.com/80093500/190503466-4156a58f-ea4e-4cbd-a066-cdc181692b53.jpg)
+> ![numberadded](https://user-images.githubusercontent.com/80093500/191615101-baac5486-c997-4923-9973-f413733a177c.gif)
 
 Go ahead and **Create Number**.
 
-And now you are ready to make a **test call!**
+And now you are ready to make a **test call**
 
->![TestCall](https://user-images.githubusercontent.com/80093500/189755924-a3c32659-358f-44f5-8ee2-774a8d0dca44.jpg)
+>![textCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
 
 Now you will see on the bottom left side of the screen **call in progress** and that's it! 
 
-**You've just created your first application using Fonoster!** 🎉
-
->![CallInProgress](https://user-images.githubusercontent.com/80093500/189756179-53f81add-8ba7-45c8-b25e-77b7e5ff7f27.jpg)
+**You've just created your first application using Fonoster** 🎉
 
 ## Need more help?
 
