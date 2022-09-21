@@ -7,6 +7,6 @@ When your Fonoster Number receives an incoming phone call, it will send an HTTP 
 If everything went well with the prior guides, all is left is calling to your Number using a mobile or landline. Your output should look similar to this:
 
 <video width="100%" playsInline="" controls="muted">
- <source src="/videos/receive_and_respond_to_a_call.mov" type="video/mp4" playsInline="" />
+ <source src="../../videos/receive_and_respond_to_a_call.mov" type="video/mp4" playsInline="" />
 </video>
 

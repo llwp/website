@@ -25,7 +25,7 @@ Perform the following steps to create a Voice Application:
 ```
 
 <video width="100%" playsInline="" controls="muted">
- <source src="/videos/create_a_voice_application_1.mov" type="video/mp4" playsInline="" />
+ <source src="../../videos/create_a_voice_application_1.mov" type="video/mp4" playsInline="" />
 </video>
 
 First, create an empty NodeJS project with:
@@ -88,7 +88,7 @@ Now that we have the Voice Application up and running, you need to make it avail
 > Remember to keep your application running
 
 <video width="100%" playsInline="" controls="muted">
- <source src="/videos/create_a_voice_application_2.mov" type="video/mp4" playsInline="" />
+ <source src="../../videos/create_a_voice_application_2.mov" type="video/mp4" playsInline="" />
 </video>
 
 Run Ngrok, in your console, with the following command:
