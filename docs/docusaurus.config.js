@@ -9,7 +9,7 @@ const config = {
   title: 'Fonoster',
   tagline: 'The Open Source Twilio Alternative',
   url: 'https://fonoster.com',
-  baseUrl: '/',
+  baseUrl: process.env.DOCS_BASE_URL || '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
