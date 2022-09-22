@@ -4,9 +4,9 @@ Fonoster's command-line tool (CLI) will help you manage your Fonoster instances.
 
 ## Installing
 
-The command-line tool is available via Node Package Manager or NPM. 
+The command-line tool is available via Node Package Manager (NPM). 
 
-**Use the following steps to install the CLI as a global command.**
+**Use the following steps to install the CLI as a global command.** To access the Fonoster infrastructure CLI.
 
 1. Open a new terminal
 2. Paste into your terminal the following command
