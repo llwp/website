@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
 
+const GIT_BRANCH = process.env.GIT_BRANCH || 'main';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fonoster',
@@ -24,13 +26,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/fonoster/website/edit/main/docs/',
+          editUrl: `https://github.com/fonoster/website/edit/${GIT_BRANCH}/docs/`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/fonoster/website/edit/main/docs/blog/',
+            `https://github.com/fonoster/website/edit/${GIT_BRANCH}/docs/blog/`,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
