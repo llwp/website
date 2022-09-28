@@ -22,6 +22,8 @@ Each Project has its own `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET` and have the `P
 
 **Your project has been succesfully created.** 
 
+If you go to your Fonoster Dashboard, you'll see your project. 
+
 ## Start working with a a new Project 
 
 **To start working with a new Project you first must select it as default, to do so follow these few steps:**
