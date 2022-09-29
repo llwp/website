@@ -19,7 +19,7 @@ callManager.call({
   .then(console.log)
   .catch(console.error);
 ```
-## Replace the To and From phone numbers
+## Replace values with yours 
 
 This fragment of code starts a phone call between the two phone numbers that we pass as arguments. 
 >**The `from` number is our Fonoster number, and the 'to' number is who we want to call.**
