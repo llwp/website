@@ -4,7 +4,7 @@
 
 | Application      | Environment | Deployed version | Link                                             |
 |------------------|-------------|------------------|--------------------------------------------------|
-| **Learn (Docs)** | Staging     | v0.0.1           | [Go to](https://fonoster.github.io/website)      |
+| **Learn (Docs)** | Staging     | v0.0.1           | [Go to](https://learn.fonoster.dev)              |
 | **Learn (Docs)** | Production  | v0.0.1           | [Go to](https://learn.fonoster.com)              |
 | **Learn (Docs)** | Development | v0.0.1           | [Go to](http://localhost:3000)                   |
 |                  |             |                  |                                                  |

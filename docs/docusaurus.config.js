@@ -1,39 +1,50 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/oceanicNext');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/oceanicNext");
+const { exec } = require("child_process");
+
+let GIT_BRANCH = process.env.GIT_BRANCH;
+
+if (!GIT_BRANCH) {
+  exec("git rev-parse --abbrev-ref HEAD", (_, stdout) => {
+    if (typeof stdout === "string") GIT_BRANCH = stdout.trim();
+  });
+}
+
+const getURL = (base = "https://learn.fonoster") =>
+  `${base}${GIT_BRANCH === "main" ? ".com" : ".dev"}`;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Fonoster',
-  tagline: 'The Open Source Twilio Alternative',
-  url: 'https://fonoster.com',
-  baseUrl: process.env.DOCS_BASE_URL || '/',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'fonoster', // Usually your GitHub org/user name.
-  projectName: 'website', // Usually your repo name.
+  title: "Fonoster",
+  tagline: "The Open Source Twilio Alternative",
+  url: getURL(),
+  baseUrl: process.env.DOCS_BASE_URL || "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "fonoster", // Usually your GitHub org/user name.
+  projectName: "website", // Usually your repo name.
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: 'https://github.com/fonoster/website/edit/main/docs/',
+          editUrl: `https://github.com/fonoster/website/edit/${GIT_BRANCH}/docs/`,
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/fonoster/website/edit/main/docs/blog/',
+          editUrl: `https://github.com/fonoster/website/edit/${GIT_BRANCH}/docs/blog/`,
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -42,125 +53,147 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID || "Q9NE0RN6Q8",
+        apiKey:
+          process.env.ALGOLIA_API_KEY || "28367c1d290ae9871634b44fca7e551a",
+        indexName: process.env.ALGOLIA_INDEX || "learn.fonoster",
+        contextualSearch: true,
+      },
       colorMode: {
         // "light" | "dark"
-        defaultMode: 'dark',
+        defaultMode: "dark",
         disableSwitch: false,
-  
+
         // Should we use the prefers-color-scheme media-query,
         // using user system preferences, instead of the hardcoded defaultMode
         respectPrefersColorScheme: false,
       },
       navbar: {
         logo: {
-          alt: 'Fonoster Logo',
-          src: '/img/logo-light.svg',
-          srcDark: '/img/logo-dark.svg',
+          alt: "Fonoster Logo",
+          src: "/img/logo-light.svg",
+          srcDark: "/img/logo-dark.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'overview',
-            position: 'left',
-            label: 'Documentation',
-          },
-          { to: '/docs/tutorials/using_google_speech', label: 'Tutorials', position: 'left' },
-          { to: '/docs/reference/overview', label: 'Reference', position: 'left' },
-          { to: 'https://marketplace.fonoster.com', label: 'Marketplace', position: 'left' },
-          { to: 'https://console.fonoster.io', label: 'Sign in', position: 'left' },
-          {
-            href: 'https://github.com/fonoster/fonoster',
-            className: 'navbar-item-github',
-            position: 'right',
+            type: "doc",
+            docId: "overview",
+            position: "left",
+            label: "Documentation",
           },
           {
-            href: 'https://twitter.com/fonoster',
-            className: 'navbar-item-twitter',
-            position: 'right',
+            to: "/docs/tutorials/using_google_speech",
+            label: "Tutorials",
+            position: "left",
+          },
+          {
+            to: "/docs/reference/overview",
+            label: "Reference",
+            position: "left",
+          },
+          {
+            to: "https://marketplace.fonoster.com",
+            label: "Marketplace",
+            position: "left",
+          },
+          {
+            to: "https://console.fonoster.io",
+            label: "Sign in",
+            position: "left",
+          },
+          {
+            href: "https://github.com/fonoster/fonoster",
+            className: "navbar-item-github",
+            position: "right",
+          },
+          {
+            href: "https://twitter.com/fonoster",
+            className: "navbar-item-twitter",
+            position: "right",
           },
         ],
       },
       footer: {
         links: [
           {
-            title: 'Product',
+            title: "Product",
             items: [
               {
-                label: 'Marketplace',
-                to: 'https://marketplace.fonoster.com',
+                label: "Marketplace",
+                to: "https://marketplace.fonoster.com",
               },
               {
-                label: 'VoIP Net',
-                to: 'docs/getting_started/voipnet',
+                label: "VoIP Net",
+                to: "docs/getting_started/voipnet",
               },
               {
-                label: 'Voice Applications',
-                to: 'docs/getting_started/voice',
-              }
-            ],
-          },
-          {
-            title: 'Resources',
-            items: [
-              {
-                label: 'Support',
-                href: '/docs/support',
-              },
-              {
-                label: 'System Status',
-                href: 'https://status.fonoster.io',
-              },
-              {
-                label: 'Github Discussions',
-                href: 'https://github.com/fonoster/fonoster/discussions',
-              },
-              {
-                label: 'Discord Community',
-                href: 'https://discord.gg/mpWSRUhG7e',
+                label: "Voice Applications",
+                to: "docs/getting_started/voice",
               },
             ],
           },
           {
-            title: 'Developers',
+            title: "Resources",
             items: [
               {
-                label: 'Documentation',
-                to: '/',
+                label: "Support",
+                href: "/docs/support",
               },
               {
-                label: 'API Reference',
-                href: '/docs/reference/overview',
+                label: "System Status",
+                href: "https://status.fonoster.io",
               },
               {
-                label: 'Tutorials',
-                href: '/docs/tutorials/using_google_speech',
+                label: "Github Discussions",
+                href: "https://github.com/fonoster/fonoster/discussions",
+              },
+              {
+                label: "Discord Community",
+                href: "https://discord.gg/mpWSRUhG7e",
               },
             ],
           },
           {
-            title: 'Company',
+            title: "Developers",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Documentation",
+                to: "/",
               },
               {
-                label: 'DEV',
-                href: 'https://dev.to/t/fonoster',
-              }
+                label: "API Reference",
+                href: "/docs/reference/overview",
+              },
+              {
+                label: "Tutorials",
+                href: "/docs/tutorials/using_google_speech",
+              },
+            ],
+          },
+          {
+            title: "Company",
+            items: [
+              {
+                label: "Blog",
+                to: "/blog",
+              },
+              {
+                label: "DEV",
+                href: "https://dev.to/t/fonoster",
+              },
             ],
           },
         ],
         copyright: `© ${new Date().getFullYear()}, Fonoster. All Rights Reserved.`,
       },
       prism: {
-        defaultLanguage: 'js',
-        plugins: ['line-numbers', 'show-language'],
-        theme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
-        darkTheme: require('@kiwicopple/prism-react-renderer/themes/vsDark'),
+        defaultLanguage: "js",
+        plugins: ["line-numbers", "show-language"],
+        theme: require("@kiwicopple/prism-react-renderer/themes/vsDark"),
+        darkTheme: require("@kiwicopple/prism-react-renderer/themes/vsDark"),
       },
     }),
-
 };
 
 module.exports = config;

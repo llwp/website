@@ -1,32 +1,39 @@
 # Create a Project
 
-Projects in Fonoster allow you to manage related resources in a single place. With your Project account, you will be able to create and manage your Providers, Numbers, SIP Agents, Domains, Functions, etc.
+Projects in Fonoster allow you to manage related resources in a single place. With your Project account, you will be able to create and manage your Providers, Numbers, SIP Agents, Domains, Functions, and many more features.
 
-Each Project has its own `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET` and have the `PJ` prefix (i.e: `PJ619154d081467a0700000001`)
+**To create a new Project with your terminal follow these steps:**
 
-To create a new Project with the console follow the next few steps:
-
-```none
 1. Open a new terminal
-2. Type the command "fonoster projects:create"
-3. Type a friendly name
-4. Chose to enable or disable experimental APIs
+2. Copy the following command where you'll be prompted to sign in using Fonoster with your `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`
+```none
+fonoster auth:login
 ```
-
-<video width="100%" playsInline="" controls="muted">
- <source src="/videos/create_a_project_1.mov" type="video/mp4" playsInline="" />
-</video>
-
-To start working with you new Project, you have to select it as default. To set your new Project as default, follow the next steps:
+> Make sure that you don't have a project already created. Basic accounts only allow one project at a time. 
+3. Now copy the following command 
 
 ```none
-2. Open a new terminal
-3. Find the Project's reference
-4. Issue the "fonoster projects:use [REF]" to set the default Project
+fonoster projects:create
 ```
+4. Type a friendly name
+5. Chose to enable or disable experimental APIs
 
-<video width="100%" playsInline="" controls="muted">
- <source src="/videos/create_a_project_2.mov" type="video/mp4" playsInline="" />
-</video>
+Each Project has its own `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET` and have the `PJ` prefix (i.e: `PJ619154d081467a0700000001`) and that is the result you'll see in your terminal. 
 
-You are all set. You can now begin adding your Providers, Numbers, etc.
+**Your project has been succesfully created.** 
+
+If you go to your Fonoster Dashboard, you'll see your project. 
+
+## Start working with a a new Project 
+
+**To start working with a new Project you first must select it as default, to do so follow these few steps:**
+
+1. Open a new terminal
+2. Find the Project's reference, they have the `PJ` prefix (i.e: `PJ619154d081467a0700000001`)
+3. To set it as default copy this command into your terminal where REF is the reference number with a `PJ` prefix
+```none
+fonoster projects:use REF
+```
+(i.e fonoster projects:use PJ619154d081467a0700000001)
+
+**You are all set. You can now begin adding your Providers, Numbers, and many other features.**
