@@ -1,17 +1,5 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/oceanicNext");
-const { exec } = require("child_process");
-
-let GIT_BRANCH = process.env.GIT_BRANCH;
-
-if (!GIT_BRANCH) {
-  exec("git rev-parse --abbrev-ref HEAD", (_, stdout) => {
-    if (typeof stdout === "string") GIT_BRANCH = stdout.trim();
-  });
-}
+const GIT_BRANCH = process.env.GIT_BRANCH || "main";
 
 const getURL = (base = "https://learn.fonoster") =>
   `${base}${GIT_BRANCH === "main" ? ".com" : ".dev"}`;
