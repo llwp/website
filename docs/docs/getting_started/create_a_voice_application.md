@@ -84,11 +84,13 @@ Now that we have the Voice Application up and running, you need to make it avail
 
 
 1. Open a new terminal
+> You should already have Ngrok installed from previous guides. If you do go ahead and skip straight into step 3.
+
 2. Install Ngrok 
 ```none
 npm i -g ngrok
 ```
-2. Start Ngrok with the application's protocol/port with the following command:
+3. Start Ngrok with the application's protocol/port with the following command:
 
 ```none
 ngrok http 3000
