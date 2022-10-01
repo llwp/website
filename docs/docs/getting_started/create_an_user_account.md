@@ -6,7 +6,7 @@ Creating an user account will give you access to:
 - Set your Trunks, Agents and Numbers
 - Manage your user settings
 
-If you already have a Fonoster account, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
+> If you already have a Fonoster account, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
 
 **You will need to [Sign In](https://console.fonoster.io) with GitHub to create a Fonoster account.**
 
