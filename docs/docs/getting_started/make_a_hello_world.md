@@ -4,89 +4,73 @@ You will need to [Log In](https://console.fonoster.io) to your Fonoster account 
 
 > If you don't have one yet you will need to [Sign up](https://console.fonoster.io) with GitHub to create a Fonoster account.
 
-**More of a visual learner?** <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> Watch the YouTube tutorial. </a> 
+More of a visual learner? [Watch the YouTube tutorial](https://www.youtube.com/watch?v=m6B_9lU4iSw)
 
 ## What you will need:
+
 - Fonoster Account
+- Ngrok
 - Node version 16 or above
-- Git
+- Git (optional)
 
-Check the versions by typing `--version` 
-```none
-git --version
-```
-```none
-node --version
-```
+## Setting up our Node.js server
 
-### Setting up our Node.js server
+You need to clone or download this template with [everything you need to create a voice application](https://github.com/fonoster/nodejs-voiceapp) into your local environment.
 
-You need to clone this template with [everything you need to create a voice application](https://github.com/fonoster/nodejs-voiceapp) into your local environment.
-
-- You do not need a dedicated repository to clone it.
-
-Run this command on your terminal 
+To setup the NodeJS Voice Application, first clone the repository with:
 
 ```none
 git clone https://github.com/fonoster/nodejs-voiceapp.git
 ````
 
-Go ahead and cd over the directory it made for you named `nodejs-voiceapp`. 
+Next, move into the project'd directory and install the dependencies with:
 
-Type into your terminal `cd nodejs-voiceapp` and install all the dependencies with: `npm i` or `npm install`
 ```none
+cd nodejs-voiceapp
 npm install 
 ````
-Now you only need a couple more packages to install so run ` npm install -g ngrok`  
+
+And, install the Ngrok tool in the global environment with:
+
 ```none
 npm install -g ngrok
 ````
 
-For Mac
-```none
-brew install ngrok/ngrok/ngrok
-````
-
-And `npm install --save-dev cross-env`
-
-```none
-npm install --save-dev cross-env
-````
-Now you **are ready to start your server!!!** 
-
-Type `npm start` into the terminal and hit enter.
+Finally, start the Voice Application with:
 
 ```none
 npm start
 ````
-A **successful message** will show you **your server is up and running on port 3000**.
 
-### Connecting our server to Fonoster
+By default, y our application will be running on port 3000.
 
-Open a new terminal window **do not close the one you have with the server running** and navigate towards the directory you created the server on.
+## Making the application public
 
-To connect our server to Fonoster we need to first **make the server public**, to do this you need to type `ngrok http 3000` and this will make ngrok listen to the port the server is on, port 3000.
+To connect Fonoster with the Voice Application, we first need to make it available to the public Internet. For this task, we use Ngrok.
 
-```none
+To make the Voice Application public, first open a new terminal without close the one with Voice Application.
+
+Next, start Ngrok with:
+
+```bash
 ngrok http 3000
-````
+```
 
-A **successfull connection will** show you the new HTTP URL where our server is up and running: 
+Your application is now ready for public access and will look similar to this:
 
->![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
->Highlighted yellow because you will need to use this link later on the tutorial.
+![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
 
-### Create a New Project using your Fonoster account
+## Create a New Project using your Fonoster account
 
 Without closing any of your open terminals, make your way over to your Fonoster account and create a new project to connect it to your newly created server. You can name it however you want.
 
->![createproject3](https://user-images.githubusercontent.com/80093500/191590647-cacce8cd-a14f-4c9b-b205-14f44b3efea1.gif)
+![createproject3](https://user-images.githubusercontent.com/80093500/191590647-cacce8cd-a14f-4c9b-b205-14f44b3efea1.gif)
 
 Now, select the project you just created so we can have access to the **Fonoster Dashboard.**
 
->![Demo](https://user-images.githubusercontent.com/80093500/191602117-c3b1e621-d78e-49b2-9160-f0c0eee24477.gif)
+![Demo](https://user-images.githubusercontent.com/80093500/191602117-c3b1e621-d78e-49b2-9160-f0c0eee24477.gif)
 
-#### Creating a New Trunk or Provider
+## Creating a New Trunk or Provider
 
 Go to the **SIP NETWORK** tab and create a **New Trunk**
 <ul>
@@ -94,10 +78,10 @@ Go to the **SIP NETWORK** tab and create a **New Trunk**
   <li> <strong> Set Providers Hostname or IPv4 to localhost </strong> and you are ready to click on <strong>Add Provider</strong> </li>
   </ul>
 
->![Trunk(1)](https://user-images.githubusercontent.com/80093500/191605028-7eed06a7-4edd-43c6-b167-dfbee99d14cf.gif)
+![Trunk(1)](https://user-images.githubusercontent.com/80093500/191605028-7eed06a7-4edd-43c6-b167-dfbee99d14cf.gif)
 
 
-#### Creating a New Number
+## Creating a New Number
 
 The **last step** is to create a new number. Head back to the **SIP NETWORK** tab, select **Number** and **New Number**
 <ul>
@@ -106,13 +90,13 @@ The **last step** is to create a new number. Head back to the **SIP NETWORK** ta
   <li> For <strong> Number </strong> you can use any number, <strong> this is a placeholder </strong> but for <strong> Webhook URL </strong> you need to open back your <strong> ngrok terminal </strong> and copy the link provided. </li>
   </ul>
 
-> ![numberadded](https://user-images.githubusercontent.com/80093500/191615101-baac5486-c997-4923-9973-f413733a177c.gif)
+![numberadded](https://user-images.githubusercontent.com/80093500/191615101-baac5486-c997-4923-9973-f413733a177c.gif)
 
 Go ahead and **Create Number**.
 
 And now you are ready to make a **test call**
 
->![textCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
+![testCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
 
 Now you will see on the bottom left side of the screen **call in progress** and that's it! 
 
@@ -120,11 +104,6 @@ Now you will see on the bottom left side of the screen **call in progress** and 
 
 ## Need more help?
 
--  Join our <a href="https://discord.gg/mpWSRUhG7e"> Discord Community. </a>
--  Create a new <a href="https://github.com/orgs/fonoster/discussions"> Discussion.</a>
--  Check out the <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> video tutorial. </a>
-
-
-
-
-
+-  Join our [Discord Community](https://discord.gg/mpWSRUhG7e)
+-  Create a new [Discussion](https://github.com/orgs/fonoster/discussion)
+-  Check out the [video tutorial](https://www.youtube.com/watch?v=m6B_9lU4iSw)
