@@ -58,7 +58,7 @@ ngrok http 3000
 
 Your application is now ready for public access and will look similar to this:
 
-![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
+![ngrokksuccess](https://raw.githubusercontent.com/fonoster/website/develop/docs/static/img/ngrok_example.png)
 
 ## Create a New Project using your Fonoster account
 
