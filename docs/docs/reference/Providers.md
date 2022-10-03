@@ -3,7 +3,7 @@
 ## Providers ⇐ <code>APIClient</code>
 Use Fonoster Providers, a capability of Fonoster SIP Proxy subsystem,
 to create, update, get and delete providers. Fonoster Providers requires of a
-running Fonosterdeployment.
+running Fonoster deployment.
 
 **Kind**: global class  
 **Extends**: <code>APIClient</code>  
