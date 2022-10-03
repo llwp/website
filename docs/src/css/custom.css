@@ -1313,3 +1313,7 @@ h4.method-list-item-label .method-list-item-validation {
   border: 1px solid var(--custom-border-color);
   padding: 2px 6px;
 }
+
+.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  padding-left: 0 !important;
+}
