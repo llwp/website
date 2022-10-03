@@ -100,6 +100,11 @@ const config = {
             className: "navbar-item-twitter",
             position: "right",
           },
+          {
+            href: "https://discord.gg/mpWSRUhG7e",
+            className: "navbar-item-discord",
+            position: "right",
+          },
         ],
       },
       footer: {
