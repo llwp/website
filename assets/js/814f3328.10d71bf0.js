@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2535],{5641:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"The essentials of building Voice Applications with Fonoster","permalink":"/blog/The essentials of building Voice Applications with Fonoster"},{"title":"Welcome","permalink":"/blog/welcome"}]}')}}]);
