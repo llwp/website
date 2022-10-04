@@ -1,17 +1,23 @@
 # Using Fonoster with Google Speech APIs
 
-Follow this quick guide to enable Google Speech in Fonoster, and unlock the potential
+This quick guide will walk you thorugh what is needed to **enable Google Speech in Fonoster**, and unlock the potential
 of using Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) in your Voice Applications.
 
 ## Obtaining a Service Account Key
 
-To use Google Speech in Fonoster you will need a Service Account Key. To obtain the key please perform the following steps.
+To use Google Speech in Fonoster **you will need a Service Account Key**. 
 
-- Open GCP console https://console.cloud.google.com/
-- Select or create a new project
-- Search for "Cloud Speech-to-Text API" and enable it
-- Search for "Service accounts" and create a new service account
-- Add a key to the service account, choose JSON format, download and save in a safe location
+To obtain the key please perform the following steps.
+
+1. Open GCP console https://console.cloud.google.com/
+2. Select or create a new project
+> Assign a name and organization, you can leave those to be the default values
+3. Search for "Cloud Speech-to-Text API" and enable it
+> Check the documentation for the [Cloud Speech-to-Text API](https://cloud.google.com/speech-to-text/docs?hl=es_419&_ga=2.185527210.-2040607004.1664903945)
+4. Search for "Service accounts" and create a new service account
+5. Add a key to the service account 
+6. Choose JSON format
+7. Download and save in a safe location
 
 ## Using the Speech APIs in a Voice Application
 
@@ -45,4 +51,4 @@ voiceServer.listen(async(req, res) => {
 });
 ```
 
-That's all! Now you can use Google Speech APIs in your Fonoster applications.
+That's all. Now you can use Google Speech APIs in your Fonoster applications.
