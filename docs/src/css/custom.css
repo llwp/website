@@ -511,15 +511,10 @@ a.card:hover {
 .menu > ul.menu__list > li.menu__list-item:first-child div.title {
   margin-top: 0;
 }
-.menu > ul.menu__list ul.menu__list {
-  border-left: 1px solid var(--custom-border-color);
-  margin-left: 0;
-  padding-left: var(--ifm-menu-link-padding-horizontal);
-}
+
 .menu > ul.menu__list ul.menu__list .menu__link {
   border-radius: 0;
   font-size: 0.85rem;
-  margin-left: calc(var(--ifm-menu-link-padding-horizontal) * -1);
   padding-left: var(--ifm-menu-link-padding-horizontal);
 }
 
@@ -1341,8 +1336,4 @@ h4.method-list-item-label .method-list-item-validation {
   font-family: 'office code pro';
   border: 1px solid var(--custom-border-color);
   padding: 2px 6px;
-}
-
-.theme-doc-sidebar-menu > .theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
-  padding-left: 0 !important;
 }
