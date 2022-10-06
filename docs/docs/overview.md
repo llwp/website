@@ -17,5 +17,4 @@ Fonoster helps developers to create, test and deploy real-time communication sol
 
 Fonoster has a community of Open Source contributors and users, we'd love to have you.
 
-Find out more on the [community page](/docs/community) and join the Discord server to chat with contributors and get help, [accept our invite](https://discord.gg/mpWSRUhG7e).
-
+Find out more on the [community page](/docs/community) and join the [Discord](https://discord.gg/mpWSRUhG7e) community to chat with contributors and get help.
