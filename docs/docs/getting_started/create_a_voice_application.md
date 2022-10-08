@@ -85,9 +85,7 @@ Your app will live at `http://127.0.0.1:3000`. Be sure to leave the server runni
 
 Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. With Ngrok, you can publish a web server with a single command.
 
-> Remember to keep your application running.
-
-In a new terminal run Ngrok with the following command:
+Without closing the Voice Application, open a new terminal and run Ngrok with the following command:
 
 ```bash
 ngrok http 3000
