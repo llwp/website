@@ -3,7 +3,7 @@
 ## Agents ⇐ <code>APIClient</code>
 Use Fonoster Agents, a capability of Fonoster SIP Proxy subsystem,
 to create, update, get and delete Agents. Agents requires of a
-runningFonosterdeployment.
+running Fonoster deployment.
 
 **Kind**: global class  
 **Extends**: <code>APIClient</code>  

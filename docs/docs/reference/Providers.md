@@ -3,7 +3,7 @@
 ## Providers ⇐ <code>APIClient</code>
 Use Fonoster Providers, a capability of Fonoster SIP Proxy subsystem,
 to create, update, get and delete providers. Fonoster Providers requires of a
-running Fonosterdeployment.
+running Fonoster deployment.
 
 **Kind**: global class  
 **Extends**: <code>APIClient</code>  
@@ -59,7 +59,7 @@ Creates a new Provider on the SIP Proxy subsystem.
 | request.secret | <code>string</code> | Password for the trunk. No required for static IP authentication |
 | request.host | <code>string</code> | Hostname or IP of the Provider |
 | request.transport | <code>string</code> | The transport for the Provider. Fonoster will use TCP if none is provided |
-| request.expires | <code>string</code> | Expiration time for the registration. Fonoster will use 3600 if non is provided |
+| request.expires | <code>string</code> | Expiration time for the registration. Fonoster will use 3600 if none is provided |
 
 **Example**  
 ```js
@@ -114,7 +114,7 @@ Update a Provider at the SIP Proxy subsystem.
 | request.secret | <code>string</code> | Password for the trunk. No required for static IP authentication |
 | request.host | <code>string</code> | Hostname or IP of the Provider |
 | request.transport | <code>string</code> | The transport for the Provider. Fonoster will use TCP if none is provided |
-| request.expires | <code>string</code> | Expiration time for the registration. Fonoster will use 3600 if non is provided |
+| request.expires | <code>string</code> | Expiration time for the registration. Fonoster will use 3600 if none is provided |
 
 **Example**  
 ```js

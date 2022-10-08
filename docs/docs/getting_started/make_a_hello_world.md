@@ -1,130 +1,95 @@
 # Make a Hello World 
 
-You will need to [Log In](https://console.fonoster.io) to your Fonoster account to access the Dashboard.
+You will need to [Log In](https://console.fonoster.io) to your Fonoster account to access the Console.
 
-> If you don't have one yet you will need to [Sign up](https://console.fonoster.io) with GitHub to create a Fonoster account.
+More of a visual learner? [Watch the YouTube tutorial](https://www.youtube.com/watch?v=m6B_9lU4iSw)
 
-**More of a visual learner?** <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> Watch the YouTube tutorial. </a> 
+:::info
+If you don't have one yet have an account, you can [Sign up](https://console.fonoster.io) for one with GitHub.
+:::
 
 ## What you will need:
+
 - Fonoster Account
-- Node version 16 or above
-- Git
+- Ngrok
+- Node version 16+
+- Git (optional)
 
-Check the versions by typing `--version` 
-```none
-git --version
-```
-```none
-node --version
-```
+## Setting up the NodeJS server
 
-### Setting up our Node.js server
-
-You need to clone this template with [everything you need to create a voice application](https://github.com/fonoster/nodejs-voiceapp) into your local environment.
-
-- You do not need a dedicated repository to clone it.
-
-Run this command on your terminal 
+To set up the NodeJS Voice Application, first, clone the repository with the following:
 
 ```none
 git clone https://github.com/fonoster/nodejs-voiceapp.git
 ````
 
-Go ahead and cd over the directory it made for you named `nodejs-voiceapp`. 
+Next, move into the repository directory and install the dependencies with the following:
 
-Type into your terminal `cd nodejs-voiceapp` and install all the dependencies with: `npm i` or `npm install`
 ```none
+cd nodejs-voiceapp
 npm install 
 ````
-Now you only need a couple more packages to install so run ` npm install -g ngrok`  
+
+Then, install the Ngrok tool in the global environment with the following:
+
 ```none
 npm install -g ngrok
 ````
 
-For Mac
-```none
-brew install ngrok/ngrok/ngrok
-````
-
-And `npm install --save-dev cross-env`
-
-```none
-npm install --save-dev cross-env
-````
-Now you **are ready to start your server!!!** 
-
-Type `npm start` into the terminal and hit enter.
+Finally, start the Voice Application with the following:
 
 ```none
 npm start
 ````
-A **successful message** will show you **your server is up and running on port 3000**.
 
-### Connecting our server to Fonoster
+By default, the application will be running on port 3000.
 
-Open a new terminal window **do not close the one you have with the server running** and navigate towards the directory you created the server on.
+## Making the application public
 
-To connect our server to Fonoster we need to first **make the server public**, to do this you need to type `ngrok http 3000` and this will make ngrok listen to the port the server is on, port 3000.
+To connect Fonoster with the Voice Application, we first need to make it available to the public Internet. For this task, we use Ngrok.
 
-```none
+To make the Voice Application public, open a new terminal without closing the one with Voice Application.
+
+Next, start Ngrok with:
+
+```bash
 ngrok http 3000
-````
+```
 
-A **successfull connection will** show you the new HTTP URL where our server is up and running: 
+Your application is now ready for public access and will look similar to this:
 
->![ngrokksuccess](https://user-images.githubusercontent.com/80093500/190503172-97761255-2981-4748-9e6d-ff1d56416211.png)
->Highlighted yellow because you will need to use this link later on the tutorial.
+![ngrokksuccess](https://raw.githubusercontent.com/fonoster/website/develop/docs/static/img/ngrok_example.png)
 
-### Create a New Project using your Fonoster account
+## Creating a New Project using your Fonoster account
 
-Without closing any of your open terminals, make your way over to your Fonoster account and create a new project to connect it to your newly created server. You can name it however you want.
+Without closing the terminals, go to the [console](https://console.fonoster.com) and create a new Project or use an existing one.
 
->![createproject3](https://user-images.githubusercontent.com/80093500/191590647-cacce8cd-a14f-4c9b-b205-14f44b3efea1.gif)
+Next, select the Project you just created to access its resources.
 
-Now, select the project you just created so we can have access to the **Fonoster Dashboard.**
+## Creating a Placeholder Trunk
 
->![Demo](https://user-images.githubusercontent.com/80093500/191602117-c3b1e621-d78e-49b2-9160-f0c0eee24477.gif)
+Once inside your Project, look for the [+] sign and select Trunk to show the create Trunk form.
 
-#### Creating a New Trunk or Provider
+Next, create a placeholder Trunk by setting the Username, Password, and Hostname to `placeholder` or any other value.
 
-Go to the **SIP NETWORK** tab and create a **New Trunk**
-<ul>
-  <li> You <strong> don't need to have a Provider at this point </strong>, you can use placeholders for every input. </li>
-  <li> <strong> Set Providers Hostname or IPv4 to localhost </strong> and you are ready to click on <strong>Add Provider</strong> </li>
-  </ul>
+Finally, click on Add Provider.
 
->![Trunk(1)](https://user-images.githubusercontent.com/80093500/191605028-7eed06a7-4edd-43c6-b167-dfbee99d14cf.gif)
+## Creating a Placeholder Number
 
+The last step is to create a placeholder Number.
 
-#### Creating a New Number
+To create a placeholder Number, look for the [+] Sign and select Number to show the create Number form.
 
-The **last step** is to create a new number. Head back to the **SIP NETWORK** tab, select **Number** and **New Number**
-<ul>
-  <li> <strong> You do not need a number, you can also create random ones that will serve as placeholders </strong> </li>
-  <li> First, select the PLACEHOLDER we created as our Provider in the previous step. </li>
-  <li> For <strong> Number </strong> you can use any number, <strong> this is a placeholder </strong> but for <strong> Webhook URL </strong> you need to open back your <strong> ngrok terminal </strong> and copy the link provided. </li>
-  </ul>
+Next, select the Provider you created in the previous step.
 
-> ![numberadded](https://user-images.githubusercontent.com/80093500/191615101-baac5486-c997-4923-9973-f413733a177c.gif)
+Then, add a Number (it can be any number) and click on Create Number.
 
-Go ahead and **Create Number**.
+Finally, for the Webhook URL, use the link provided to you by Ngrok.
 
-And now you are ready to make a **test call**
+Now you are ready to test your Voice Application.
 
->![textCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
+![testCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
 
-Now you will see on the bottom left side of the screen **call in progress** and that's it! 
+Now you will see on the bottom left side of the screen call in progress, and that's it! 
 
-**You've just created your first application using Fonoster** 🎉
-
-## Need more help?
-
--  Join our <a href="https://discord.gg/mpWSRUhG7e"> Discord Community. </a>
--  Create a new <a href="https://github.com/orgs/fonoster/discussions"> Discussion.</a>
--  Check out the <a href="https://www.youtube.com/watch?v=m6B_9lU4iSw"> video tutorial. </a>
-
-
-
-
-
+You've just created your first application using Fonoster 🎉

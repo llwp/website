@@ -1,19 +1,17 @@
 # Make an outbound call
 
-Did you know that with Fonoster can you can initiate a phone call from Node.js?
+You can initiate a phone call using NodeJS with a Fonoster Number with a single API request.
 
-With a single API request, we can make an outbound call from the Fonoster Number. Open a new file called `call.js` and type or paste in the following code.
+First, create a new script with the following content:
 
 ```javascript
+# call.js
 const Fonoster = require("@fonoster/sdk");
 const callManager = new Fonoster.CallManager({
   accessKeyId: "PJ619154d081467a0700000001",
   accessKeySecret: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ25vc3RlciIsInJvbGUiOiJQUk9KRUNUIiwiYWNjZXNz"
 });
 
-// Few notes:
-//  1. Update the from to look exactly as the Number you added 
-//  2. Replace the webhook with the one from your Ngrok
 callManager.call({
  from: "+19842753574",
  to: "17853178070",
@@ -23,24 +21,18 @@ callManager.call({
   .catch(console.error);
 ```
 
+Next, replace the `from`, `to`, `webhook` as well as the `accessKeyId` and `accessKeySecret`
+
+Unlike the previous guides, you must use a "real" number from a Voip Provider.
+
+Also, remember that you need a set of Project credentials instead of Account credentials.
+
 ## Make an outbound call
 
-This code starts a phone call between the two phone numbers that we pass as arguments. The `from` number is our Fonoster number, and the 'to' number is who we want to call.
-
-The `webhook` argument points to a Programmable Voice Application, which tells Fonoster to handle the call once the recipient answer the call.
-
-## Replace the To and From phone numbers
-
-Remember that Fonoster Number you set up earlier? Go ahead and replace the existing from a number with that one, making sure to use E.164 formatting:
-
-`[+][country code][phone number including area code]`
-
-Next, replace the `to` phone number with a mobile or landline phone you have with you.
-
-Save your changes and run the code by running the following command from your terminal:
+Now we are ready to save the changes and run the code by copying the following command into your terminal: 
 
 ```bash
 node call.js
 ```
 
-That's it! Your phone should ring with a call from your Fonoster, and you'll hear our short message for you.
+That's it! Your phone should ring with a call from your Fonoster Number, and you'll hear our short message.

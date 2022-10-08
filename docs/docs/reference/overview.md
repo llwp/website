@@ -4,7 +4,10 @@ This API reference is valid for both the NodeJS and WebSDK with a few considerat
 
 ## Initializing
 
-To initialize your API you will need the `endpoint`, `accessKeyId`, and `accessKeySecret` and pass as a parameter for the corresponding API. For example:
+To initialize your API you will need the `endpoint`, `accessKeyId`, and `accessKeySecret` and pass as a parameter for the corresponding API.
+> Remember to replace these values with your own
+
+For example:
 
 ```javascript
 const Fonoster = require("@fonoster/sdk")
@@ -21,4 +24,4 @@ projects.createProject({ ... })
   .catc(console.error)
 ```
 
-> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to a Rest API instead of gRPC.
+> When using the `@fonoster/websdk` your endpoint must begin with `http` or `https` since you are connecting to a REST API instead of gRPC.

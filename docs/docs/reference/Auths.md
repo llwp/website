@@ -1,8 +1,7 @@
 <a name="Auths"></a>
 
 ## Auths ⇐ <code>APIClient</code>
-Use Fonoster Auth, a capability of Fonoster,
-to validate and create short life tokens.
+Use Fonoster Auth, a capability of Fonoster, to validate and create short life tokens.
 
 **Kind**: global class  
 **Extends**: <code>APIClient</code>  

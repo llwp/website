@@ -5,17 +5,19 @@ of using Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) in your Voi
 
 ## Obtaining a Service Account Key
 
-To use Google Speech in Fonoster you will need a Service Account Key. To obtain the key please perform the following steps.
+To use Google Speech in Fonoster **you will need a Service Account Key**. 
 
-- Open GCP console https://console.cloud.google.com/
-- Select or create a new project
+To obtain the key please perform the following steps.
+
+1. Open GCP console https://console.cloud.google.com/
+2. Select or create a new project
 > Assign a name and organization, you can leave those to be the default values
-- Search for "Cloud Speech-to-Text API" and enable it
+3. Search for "Cloud Speech-to-Text API" and enable it
 > Check the documentation for the [Cloud Speech-to-Text API](https://cloud.google.com/speech-to-text/docs?hl=es_419&_ga=2.185527210.-2040607004.1664903945)
-- Search for "Service accounts" and create a new service account
-- Add a key to the service account 
-- Choose JSON format
-- Download and save in a safe location
+4. Search for "Service accounts" and create a new service account
+5. Add a key to the service account 
+6. Choose JSON format
+7. Download and save in a safe location
 
 ## Using the Speech APIs in a Voice Application
 
@@ -25,12 +27,9 @@ To use the speech APIs you first need to install the NPM plugins with:
 npm install @fonoster/googleasr @fonoster/googletts
 ```
 
-Then, configure the Voice Server to use the plugins we just installed. 
+Then, configure the Voice Server to use the plugins we just installed. For example:
 
-For example:
-
-```none
-javascript
+```javascript
 const { VoiceServer } = require("@fonoster/voice");
 const GoogleTTS = require("@fonoster/googletts");
 const GoogleASR = require("@fonoster/googleasr");
@@ -52,4 +51,4 @@ voiceServer.listen(async(req, res) => {
 });
 ```
 
-That's all. You can now use the Google Speech APIs in your Fonoster applications.
+That's all. Now you can use Google Speech APIs in your Fonoster applications.
