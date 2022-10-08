@@ -19,24 +19,24 @@ A Voice Application can make use of any of the following commands:
 
 ## Create a Voice Application
 
-Creating a Voice Application using Fonoster is frictionless. Follow these steps to create your new Voice Application:
+Creating a Voice Application using Fonoster is frictionless. Follow these steps to create a Voice Application:
 
-1. Open a new terminal
-2. Create a new directory where your app will be
-```none
+First, open a new terminal.
+
+Then, create a new directory for the application with:
+
+```bash
 mkdir voiceapp
-```
-3. Move over to the newly created directory
-
-```none
 cd voiceapp
 ```
-4. Initiate a Node application
 
-```none
-npm init
+Then, initiate the NodeJS application
+
+```bash
+npm init -f
 ```
-5. Create an index.js file, add the application's content and save the file
+
+And, create an `index.js` file with the following content:
 
 ```javascript
 const { VoiceServer } = require("@fonoster/voice");
@@ -54,13 +54,15 @@ new VoiceServer(serverConfig).listen(
   }
 );
 ```
-6. Install the voice module pasting this into your terminal
+
+Install the voice module with the follwing command:
 
 ```
 npm install @fonoster/voice
 ```
 
-7. Run the application
+Finally, run the application with following command:
+
 ```bash
 node index.js
 ```
@@ -73,29 +75,22 @@ info: initializing voice server
 info: starting voice server @ 0.0.0.0, port=3000, path=/voiceapp
 ```
 
-> **Your app will live at `http://127.0.0.1:3000`.** 
->  Be sure to leave the server running.
+:::note
+
+Your app will live at `http://127.0.0.1:3000`. Be sure to leave the server running.
+
+:::
 
 ## Using Ngrok to publish your Voice Application 
 
-Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. **With Ngrok, you can publish a web server with a single command.**
+Now that we have the Voice Application up and running, you need to make it available on the Internet. The fastest way to enable public access is by using Ngrok. With Ngrok, you can publish a web server with a single command.
 
 > Remember to keep your application running.
 
+In a new terminal run Ngrok with the following command:
 
-1. Open a new terminal
-> You should already have Ngrok installed from previous guides. If you do go ahead and skip straight into step 3.
-
-2. Install Ngrok 
-```none
-npm i -g ngrok
-```
-3. Start Ngrok with the application's protocol/port with the following command:
-
-```none
+```bash
 ngrok http 3000
 ```
 
-> Remember to keep your application running
-
-Now you can use Ngrok's URL as the webhook on any of your **Fonoster Numbers.**
+Now you can use Ngrok's URL as the Webhook on any of your Fonoster Numbers.
