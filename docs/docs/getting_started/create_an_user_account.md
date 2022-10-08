@@ -1,25 +1,30 @@
-# Create an User Account
+# Create a User Account
 
-Creating an user account will give you access to: 
+Creating a user account will give you access to the following: 
 
-- Create and manage your Projects
-- Set your Trunks, Agents and Numbers
-- Manage your user settings
+- Create and manage Projects
+- Set Trunks, Agents, and Numbers
+- Manage User settings
 
-> If you already have a Fonoster account, you're all set here! [Log in](https://console.fonoster.io) and feel free to jump to the next step.
+> You're all set here if you already have a Fonoster account! [Log in](https://console.fonoster.io). Feel free to jump to the next section.
 
-**You will need to [Sign In](https://console.fonoster.io) with GitHub to create a Fonoster account.**
+**You must [Sign In](https://console.fonoster.io) with GitHub to create a Fonoster account.**
 
-This will give you access to the main console where you can start adding Numbers, Trunks, SIP Agents, Domains and much more. 
+Signing In will give you access to the main console, where you can start adding Numbers, Trunks, SIP Agents, Domains, and more. 
 
-But before we can get started we need to create a new Project that will automatically generate us our `ACCESS_KEY_ID` and our `ACCESS_KEY_SECRET` needed to make calls from Node.js.
+But before you can get started, you need to create a new Project to obtain an `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`.
 
 ## Create a New Project
 
 - Sign in with your GitHub account and create a New Project
 - Give it a friendly name
-- Select your New Project by clicking on it. This will take you to its overview and to your credentials
-  - Now you have access to the Dashboard where you can see your new credentials `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`, and many other features on your left side of the screen
-- Your Account Credentials are different from those generated in your New Project and you can find them by going into your account settings on the top right of the screen. They will have the "US" prefix (i.e: `US618572e3ec11d10600000001`) 
+- Click on the New Project to see the overview
+  - Now you have access to the Dashboard where you can see the credentials `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`
 
-Now you are all set with the basics of your Fonoster account for the next step and start making calls from Node.js or just play around with our Dashboard making your first "Hello World".
+:::note
+
+The Account Credentials are different from those generated for the Project. You can find them by going into the Account settings on the top right of the screen. They will have the "US" prefix (e.g: `US618572e3ec11d10600000001`) 
+
+:::
+
+Now you are all set with the basics of your Fonoster account for the next step and start making calls from Node.js or play around with our Dashboard making your first "Hello World."
