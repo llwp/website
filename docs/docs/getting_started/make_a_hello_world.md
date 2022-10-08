@@ -1,10 +1,12 @@
 # Make a Hello World 
 
-You will need to [Log In](https://console.fonoster.io) to your Fonoster account to access the Dashboard.
-
-> If you don't have one yet, you will need to [Sign up](https://console.fonoster.io) with GitHub to create a Fonoster account.
+You will need to [Log In](https://console.fonoster.io) to your Fonoster account to access the Console.
 
 More of a visual learner? [Watch the YouTube tutorial](https://www.youtube.com/watch?v=m6B_9lU4iSw)
+
+:::info
+If you don't have one yet have an account, you can [Sign up](https://console.fonoster.io) for one with GitHub.
+:::
 
 ## What you will need:
 
