@@ -17,7 +17,7 @@ Fonoster is developed in the open. Here are some of the channels we use to commu
 
 ## Contributing
 
-We welcome community contributions! Please see the [CONTRIBUTING.md](https://github.com/fonoster/fonoster/blob/main/CONTRIBUTING.md) file in the respective Fonoster repository for instructions on how to submit changes. If you want to make more elaborate or controversial changes, please discuss them with the community before sending a pull request.
+We welcome community contributions! Please see the [CONTRIBUTING.md](https://github.com/fonoster/fonoster/blob/main/CONTRIBUTING.md) file in the main Fonoster repository for instructions on how to submit changes. If you want to make more elaborate or controversial changes, please discuss them with the community before sending a pull request.
 
 ## Developer Meetings
 
