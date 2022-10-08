@@ -12,14 +12,14 @@ Creating a user account will give you access to the following:
 
 Signing In will give you access to the main console, where you can start adding Numbers, Trunks, SIP Agents, Domains, and more. 
 
-But before you can get started, you need to create a new Project to obtain the `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`.
+But before you can get started, you need to create a new Project to obtain the `AccessKeyId` and `AccessKeySecret`.
 
 ## Create a New Project
 
 - Sign in with your GitHub account and create a New Project
 - Give it a friendly name
 - Click on the New Project to see the overview
-  - Now you have access to the Dashboard where you can see the credentials `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`
+  - Now you have access to the Dashboard where you can see the credentials `AccessKeyId` and `AccessKeySecret`
 
 :::note
 
