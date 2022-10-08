@@ -12,7 +12,7 @@ Creating a user account will give you access to the following:
 
 Signing In will give you access to the main console, where you can start adding Numbers, Trunks, SIP Agents, Domains, and more. 
 
-But before you can get started, you need to create a new Project to obtain an `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`.
+But before you can get started, you need to create a new Project to obtain the `ACCESS_KEY_ID` and `ACCESS_KEY_SECRET`.
 
 ## Create a New Project
 
