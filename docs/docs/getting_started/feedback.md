@@ -10,6 +10,6 @@ We have two ways you can send us your thoughts using our CLI:
 You can also join our communities: 
 
 - Join our [Discord](https://discord.gg/mpWSRUhG7e)
-- Reach us on **Twitter:** [@fonoster](https://twitter.com/fonoster)
+- Reach us on Twitter: [@fonoster](https://twitter.com/fonoster)
 
-**We really appreciate feedback and look forward to hearing from you.** 
+We really appreciate feedback and look forward to hearing from you. 
