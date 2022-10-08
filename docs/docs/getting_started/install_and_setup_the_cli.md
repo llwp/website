@@ -20,10 +20,10 @@ The command-line tool is available via NPM. Use the following steps to install t
 
 The command-line tool comes with built-in commands covering all main use cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contain the following commands:
 
-- `agents:create`  creates a new agent resource
-- `agents:delete`  removes an Agent from a project
-- `agents:get`     get information about an existing agent
-- `agents:list`    list registered agents
+- `agents:create`  creates a new Agent resource
+- `agents:delete`  removes an Agent from a Project
+- `agents:get`     get information about an existing Agent
+- `agents:list`    list registered Agents
 - `agents:update`  updates an Agent at the SIP Proxy subsystem
 
 ## Authenticating the CLI
