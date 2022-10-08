@@ -11,7 +11,6 @@ If everything went well with the prior guides, all that is left is to call your 
 Start your app
 
 ```none
-# 
 LOGS_LEVEL=verbose node index.js
 ```
 
