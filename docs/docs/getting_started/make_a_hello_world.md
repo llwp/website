@@ -90,12 +90,6 @@ Now you are ready to test your Voice Application.
 
 ![testCall](https://user-images.githubusercontent.com/80093500/191616447-d78ad48f-4b4b-4342-854e-bcba4b70d4e3.gif)
 
-Now you will see on the bottom left side of the screen **call in progress**, and that's it! 
+Now you will see on the bottom left side of the screen call in progress, and that's it! 
 
-**You've just created your first application using Fonoster** 🎉
-
-## Need more help?
-
--  Join the [Discord Community](https://discord.gg/mpWSRUhG7e)
--  Create a new [Discussion](https://github.com/orgs/fonoster/discussion)
--  Check out the [video tutorial](https://www.youtube.com/watch?v=m6B_9lU4iSw)
+You've just created your first application using Fonoster 🎉
