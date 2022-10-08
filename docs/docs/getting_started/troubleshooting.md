@@ -17,7 +17,7 @@ Then observe the console's output where your Programmable Voice Application is r
 ## More help? 
 
 - Join our [Discord](https://discord.gg/mpWSRUhG7e)
-- Reach us on **Twitter:** [@fonoster](https://twitter.com/fonoster)
+- Reach us on Twitter: [@fonoster](https://twitter.com/fonoster)
 
 **Github discussions:**
 
