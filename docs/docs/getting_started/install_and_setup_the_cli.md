@@ -18,17 +18,17 @@ The command-line tool is available via NPM. Use the following steps to install t
 
 ## Commands and subcommands
 
-The command-line tool comes with built-in commands covering all main use-cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contain the following commands:
+The command-line tool comes with built-in commands covering all main use cases and additional commands via plugins. Most commands are "collapsed" under a section. For example, the `agents` sections contain the following commands:
 
 - `agents:create`  creates a new agent resource
-- `agents:delete`  removes agent from a project
+- `agents:delete`  removes an Agent from a project
 - `agents:get`     get information about an existing agent
 - `agents:list`    list registered agents
-- `agents:update`  updates a agent at the SIP Proxy subsystem
+- `agents:update`  updates an Agent at the SIP Proxy subsystem
 
 ## Authenticating the CLI
 
-You can point the CLI to your own Fonoster instance, or use our [as a service](https://console.fonoster.io) option. To use the as-a-service option follow the the next steps:
+You can point the CLI to your own Fonoster instance or use our [as a service](https://console.fonoster.io) option. To use the as-a-service option, follow the next steps:
 
 ```none
 1. Go to https://console.fonoster.io/ to get your credentials
