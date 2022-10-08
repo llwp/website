@@ -27,4 +27,4 @@ The Account Credentials are different from those generated for the Project. You 
 
 :::
 
-Now you are all set with the basics of your Fonoster account for the next step and start making calls from Node.js or play around with our Dashboard making your first "Hello World."
+Now you are all set with the basics of your Fonoster account for the next step and start making calls from NodeJS or play with the Dashboard making your first "Hello World."
