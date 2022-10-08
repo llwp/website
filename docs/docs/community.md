@@ -4,16 +4,16 @@ Fonoster is developed in the open. Here are some of the channels we use to commu
 
 [Discord](https://discord.gg/mpWSRUhG7e)
 
-**Github discussions:**
+**GitHub discussions:**
 
 - [Announcements](https://github.com/fonoster/fonoster/discussions/categories/announcements) – for announcements like new releases
 - [Q&A](https://github.com/fonoster/fonoster/discussions/categories/q-a) – for discussions around Fonoster usage and community support
 
 **Twitter:** [@fonoster](https://twitter.com/fonoster)
 
-**Issue tracker:** Use the GitHub issue tracker for the various [Fonoster repositories](https://github.com/fonoster/) to file bugs and features requests. For support, please send your questions to Github discussions or Discord rather than filling a GitHub issue.
+**Issue tracker:** Use the GitHub issue tracker for the various [Fonoster repositories](https://github.com/fonoster/) to file bugs and feature requests. For support, please send your questions to Github discussions or Discord rather than filling a GitHub issue.
 
->Please do not ask individual project members for support. Use the channels above instead, where the whole community can help you and benefit from the solutions provided. If community support is insufficient for your situation, please refer to the [Commercial Support](/docs/support) section below.
+>Please do not ask individual project members for support. Use the channels above where the whole community can help you and benefit from the solutions provided. If community support is insufficient for your situation, please refer to the [Commercial Support](/docs/support) section below.
 
 ## Contributing
 
