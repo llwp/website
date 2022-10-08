@@ -1,8 +1,8 @@
 # Overview
 
-Creating a Node.js application that can make or receive calls is easy with Fonoster Programmable Voice.
+This guide will help you create NodeJS applications to make or receive calls with Fonoster Programmable Voice.
 
-This guide will help you get started with Fonoster and teach you how to use the [CLI](https://www.npmjs.com/package/@fonoster/ctl) and the [NodeSDK](/docs/reference/overview) library to ease development.
+It will help you get started with Fonoster and show you how to use the [CLI](https://www.npmjs.com/package/@fonoster/ctl) and the [NodeSDK](/docs/reference/overview) library in development.
 
 With this guide, you will learn how to:
 
