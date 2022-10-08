@@ -1,10 +1,11 @@
 # Make an outbound call
 
-**With a single API request you can initiate a phone call using Node.js, from the Fonoster Number.**
+You can initiate a phone call using NodeJS with a Fonoster Number with a single API request.
 
-Make a new file `call.js` and paste in the following code.
+First, create a new script with the following content:
 
 ```javascript
+# call.js
 const Fonoster = require("@fonoster/sdk");
 const callManager = new Fonoster.CallManager({
   accessKeyId: "PJ619154d081467a0700000001",
@@ -19,20 +20,12 @@ callManager.call({
   .then(console.log)
   .catch(console.error);
 ```
-## Replace values with yours 
 
-This fragment of code starts a phone call between the two phone numbers that we pass as arguments. 
->**The `from` number is our Fonoster number, and the 'to' number is who we want to call.**
+Next, replace the `from`, `to`, `webhook` as well as the `accessKeyId` and `accessKeySecret`
 
-The `webhook` argument points to a Programmable Voice Application, our previously made ngrok port, which tells Fonoster to handle the call once the recipient answer the call.
+Unlike the previous guides, you must use a "real" number from a Voip Provider.
 
-Remember that Fonoster Number you set up earlier? Go ahead and replace the existing from a number with that one, making sure to use E.164 formatting:
-
-`[+][country code][phone number including area code]`
-
-Next, replace the `to` phone number with a mobile or landline phone you have with you.
-
-> Make sure to also replace accessKeyId and accessKeySecret with the ones from your account. 
+Also, remember that you need a set of Project credentials instead of Account credentials.
 
 ## Make an outbound call
 
@@ -42,4 +35,4 @@ Now we are ready to save the changes and run the code by copying the following c
 node call.js
 ```
 
-That's it! Your phone should ring with a call from your Fonoster Number, and you'll hear our short message for you.
+That's it! Your phone should ring with a call from your Fonoster Number, and you'll hear our short message.
