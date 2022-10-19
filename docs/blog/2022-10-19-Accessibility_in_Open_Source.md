@@ -32,7 +32,7 @@ Some code you can copy
 
 - Accessibility not only improves your code or life, but improves other people’s as well. 
 - 97.4% of websites overall have accessibility errors bad enough to stop someone with a disability from using that website.
-- 1 in 6 people have a disability and 1 in every 10 people have a disability that affects how they interact with people.
+- 1 in 10 people have a disability and 1 in every 10 people have a disability that affects how they interact with web pages.
 
 But we can approach this from two angles. **How does this affect me as a developer?**
 
