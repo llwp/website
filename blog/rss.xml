@@ -4,10 +4,22 @@
         <title>Fonoster Blog</title>
         <link>https://learn.fonoster.dev/blog</link>
         <description>Fonoster Blog</description>
-        <lastBuildDate>Wed, 19 Oct 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 15 Nov 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Connect Fonoster to Dialogflow]]></title>
+            <link>https://learn.fonoster.dev/blog/Connect Fonoster to Dialogflow</link>
+            <guid>Connect Fonoster to Dialogflow</guid>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Connecting Fonoster to Dialogflow is as just a few clicks away using the Fonoster Dashboard.]]></description>
+            <content:encoded><![CDATA[<p>Connecting Fonoster to Dialogflow is as just a few clicks away using the Fonoster Dashboard. </p><p><strong>Trunking information you'll need:</strong></p><ul><li>VoIP provider</li><li>Number</li><li>Username</li><li>Password</li><li>Host</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="set-up-your-providers-information">Set up your provider's information<a class="hash-link" href="#set-up-your-providers-information" title="Direct link to heading">​</a></h2><p>Sign in to Fonoster and go to the Fonoster Project Dashboard, next select SIP Network tab and create a new Trunk.</p><p>Here you'll need to provide this information from your provider's account:</p><ul><li>Your provider's name</li><li>Your username </li><li>Your secret / password</li><li>Providers Hostname or IPv4</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="google-service-account-key">Google Service Account key<a class="hash-link" href="#google-service-account-key" title="Direct link to heading">​</a></h3><p>Next step, you'll need to create a new Secret on the Secrets tab and set it to be the Google Service Account json key.</p><h4 class="anchor anchorWithStickyNavbar_LWe7" id="create-a-new-fonoster-application">Create a new Fonoster Application<a class="hash-link" href="#create-a-new-fonoster-application" title="Direct link to heading">​</a></h4><p>Now we are ready to create a new Application, go to the Applications tab and create a new one. </p><ul><li>Pick a name</li><li>Select the secret you previously added from the previous step</li><li>Pick a voice</li><li>Type the intent ID from your Dialogflow Agent</li><li>Type the project ID from your Dialogflow project</li><li>Hit save</li></ul><h5 class="anchor anchorWithStickyNavbar_LWe7" id="add-a-new-number-to-call">Add a new number to call<a class="hash-link" href="#add-a-new-number-to-call" title="Direct link to heading">​</a></h5><p>Lastly, we need to add a new number we can call and trigger Dialogflow.</p><p>Create a new number from the SIP Network tab</p><ul><li>Add your number from the provider</li><li>Add the weebhook URL <code>http://voice.fonoster:3000</code></li><li>Click save</li></ul><p>And there you have it. You're ready to call that number and be able to interact with the AI. </p><h6 class="anchor anchorWithStickyNavbar_LWe7" id="need-help">Need help?<a class="hash-link" href="#need-help" title="Direct link to heading">​</a></h6><p>Fonoster is developed in the open. Here are some of the channels you can use to reach us: </p><p><a href="https://discord.gg/mpWSRUhG7e" target="_blank" rel="noopener noreferrer">Discord</a></p><p><strong>GitHub discussions:</strong></p><ul><li><a href="https://github.com/fonoster/fonoster/discussions/categories/q-a" target="_blank" rel="noopener noreferrer">Q&amp;A</a> </li></ul><p><strong>Twitter:</strong> <a href="https://twitter.com/fonoster" target="_blank" rel="noopener noreferrer">@fonoster</a></p><p>We look forward to hearing from you.</p>]]></content:encoded>
+            <category>fonoster</category>
+            <category>voice</category>
+            <category>dialogflow</category>
+            <category>OSS</category>
+        </item>
         <item>
             <title><![CDATA[Accessibility in Open Source]]></title>
             <link>https://learn.fonoster.dev/blog/Accessibility in Open Source</link>
