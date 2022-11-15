@@ -7,7 +7,7 @@ tags: [fonoster, voice, dialogflow, OSS]
 
 # Connecting Fonoster to Dialogflow 
 
-Connecting Fonoster to Dialogflow is as just a few clicks away using the Fonoster Dashboard. 
+Connecting Fonoster to Dialogflow is just a few clicks away using the Fonoster Dashboard. 
 
 **Trunking information you'll need:**
 - VoIP provider
